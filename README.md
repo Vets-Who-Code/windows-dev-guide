@@ -635,7 +635,7 @@ There are many more languages and tools at our disposal. If you are interested i
 
 <details>
 
-w  <summary>💎 Ruby</summary>
+  <summary>💎 Ruby</summary>
 
 ### Ruby
 
