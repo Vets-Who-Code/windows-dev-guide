@@ -190,7 +190,7 @@ Windows Terminal will open a PowerShell or Command Prompt shell when launched by
 <img src="/images/term-settings.jpg" alt="Windows terminal settings" width="800px" />
 </p>
 
-2. In the Startup section you will find the Default profile dropdown, select Ubuntu:
+2. In the Startup section you will find the Default profile dropdown, select Ubuntu. Below it, select Windows Terminal as the Default terminal application:
 
 <p align="center">
 <img src="/images/default-profile.jpg" alt="Default shell profile" width="800px" />
