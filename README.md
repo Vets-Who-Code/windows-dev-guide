@@ -174,7 +174,7 @@ To launch a Linux terminal we currently need to use the Ubuntu icon from the Sta
 
 ### Installing Windows Terminal
 
-Download and install Windows Terminal through the [Microsoft Store](https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701?rtc=1&activetab=pivot:overviewtab).
+Windows 11 comes with Windows Terminal by default, but If you are using Windows 10, Download and install Windows Terminal through the [Microsoft Store](https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701?rtc=1&activetab=pivot:overviewtab).
 
 ### Terminal Settings
 
