@@ -6,27 +6,27 @@
 
 - [🔭 Overview](#-overview)
 - [☑ Prerequisites](#-prerequisites)
-- [🐧 WSL](#-wsl-1-2-3)
+- [🐧 WSL [^1] [^2] [^3]](#-wsl-1-2-3)
   - [Installing WSL 2](#installing-wsl-2)
   - [User Config](#user-config)
   - [Updating Linux](#updating-linux)
   - [Mapping Your Linux Drive](#mapping-your-linux-drive)
     - [Pin Your Code Directory](#pin-your-code-directory)
   - [Restarting WSL](#restarting-wsl)
-- [Windows Terminal](#windows-terminal-4)
+- [Windows Terminal [^4]](#windows-terminal-4)
   - [Installing Windows Terminal](#installing-windows-terminal)
   - [Terminal Settings](#terminal-settings)
     - [Default Profile](#default-profile)
     - [Starting Directory](#starting-directory)
-- [📝 Git Config](#-git-config-5)
+- [📝 Git Config [^5]](#-git-config-5)
   - [Name](#name)
   - [Email](#email)
   - [Username](#username)
-- [😺 GitHub Credentials](#-github-credentials-6)
+- [😺 GitHub Credentials [^6]](#-github-credentials-6)
   - [Creating your Personal Access Token](#creating-your-personal-access-token)
   - [Git Credential Manager](#git-credential-manager)
   - [Storing Your Token](#storing-your-token)
-- [💤 Zsh](#-zsh-7)
+- [💤 Zsh [^7]](#-zsh-7)
   - [Installing Zsh](#installing-zsh)
   - [OhMyZsh](#ohmyzsh)
   - [cURL](#curl)
@@ -34,7 +34,7 @@
   - [More Plugins](#more-plugins)
     - [zsh-autosuggestions](#zsh-autosuggestions)
     - [zsh-syntax-highlighting](#zsh-syntax-highlighting)
-- [📦 Node.js](#-nodejs-8)
+- [📦 Node.js [^8]](#-nodejs-8)
   - [NVM](#nvm)
     - [Installing NVM](#installing-nvm)
     - [Changing Node Version](#changing-node-version)
@@ -43,7 +43,7 @@
   - [Changing the Default Shell](#changing-the-default-shell)
   - [Remote Extension](#remote-extension)
   - [More Extensions](#more-extensions)
-- [🍫 Chocolatey](#-chocolatey-9)
+- [🍫 Chocolatey [^9]](#-chocolatey-9)
   - [Admin Shell](#admin-shell)
     - [Option 1](#option-1)
     - [Option 2](#option-2)
@@ -53,6 +53,13 @@
   - [Windows Apps](#windows-apps)
 - [🪜 Chrome Extensions](#-chrome-extensions)
 - [➕ Extracurriculars](#-extracurriculars)
+  - [Ruby](#ruby)
+  - [Rails](#rails)
+  - [Python Development on Windows](#python-development-on-windows)
+  - [RStudio Server](#rstudio-server)
+  - [PHP7 LAMP Stack](#php7-lamp-stack)
+  - [PHP8](#php8)
+  - [Installing a Database](#installing-a-database)
 
 ## 🔭 Overview
 
@@ -606,6 +613,10 @@ You can download all these at once with the following command using chocolatey i
 ```shell
 choco install wox runjs responsively zeal figma drawio github-desktop postman notion -y
 ```
+
+<p align="center">
+<img src="/images/demo.gif" alt="Using wox, windows term, ohmyzsh, and vs code" />
+</p>
 
 ## 🪜 Chrome Extensions
 
