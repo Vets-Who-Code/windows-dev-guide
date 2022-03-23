@@ -90,7 +90,7 @@ Using the `--install` command defaults to Ubuntu and only works if WSL is not in
 
 ### User Config
 
-Once the process of installing your Linux distribution with WSL is complete, open the distribution (Ubuntu by default) using the Start menu. You will be asked to create a User Name and Password for your Linux distribution.
+Once the process of installing your Linux distribution with WSL is complete, open the distribution (Ubuntu by default) using the Start menu. You will be asked to create a User Name and Password for your Linux distribution. When you enter your new password, nothing will display in the terminal. Your keyboard is still working! It is just a security feature.
 
 - This User Name and Password is specific to each separate Linux distribution that you install and has no bearing on your Windows user name.
 
