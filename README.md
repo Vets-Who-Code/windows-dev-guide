@@ -58,6 +58,10 @@
 
 After a lot of trial and error, I've been able to piece together a pretty respectable Windows dev environment. There are plenty of guides already out there, but none of them seem to cover the entire scope. I tried to do that here, without getting too deep into any individual topic. I believe this will leave the majority of users with a smooth Windows developer experience.
 
+<p align="center">
+<img src="/images/demo.gif" alt="Using wox, windows term, ohmyzsh, and vs code" />
+</p>
+
 ## ☑ Prerequisites
 
 - Windows 10 version 2004 and higher (Build 19041 and higher) or Windows 11 [(Which version do I have?)](https://support.microsoft.com/en-us/topic/628bec99-476a-2c13-5296-9dd081cdd808)
@@ -606,10 +610,6 @@ You can download all these at once with the following command using chocolatey i
 ```shell
 choco install wox runjs responsively zeal figma drawio github-desktop postman notion -y
 ```
-
-<p align="center">
-<img src="/images/demo.gif" alt="Using wox, windows term, ohmyzsh, and vs code" />
-</p>
 
 ## 🪜 Chrome Extensions
 
