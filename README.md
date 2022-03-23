@@ -53,13 +53,6 @@
   - [Windows Apps](#windows-apps)
 - [🪜 Chrome Extensions](#-chrome-extensions)
 - [➕ Extracurriculars](#-extracurriculars)
-  - [Ruby](#ruby)
-  - [Rails](#rails)
-  - [Python Development on Windows](#python-development-on-windows)
-  - [RStudio Server](#rstudio-server)
-  - [PHP7 LAMP Stack](#php7-lamp-stack)
-  - [PHP8](#php8)
-  - [Installing a Database](#installing-a-database)
 
 ## 🔭 Overview
 
