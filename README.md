@@ -1,5 +1,5 @@
 <p align="center">
-<img src="/images/windows.jpg" alt="Microsoft Windows Logo" width="500px" />
+<img src="images/windows.jpg" alt="Microsoft Windows Logo" width="500px" />
 </p>
 
 <h1 align="center">Windows Developer Setup Guide (2022)</h1>
@@ -52,6 +52,7 @@
   - [Basic Chocolatey Commands](#basic-chocolatey-commands)
   - [Windows Apps](#windows-apps)
 - [🪜 Chrome Extensions](#-chrome-extensions)
+- [🇺🇸 VetsWhoCode Web App](#-vetswhocode-web-app)
 - [➕ Extracurriculars](#-extracurriculars)
 
 ## 🔭 Overview
@@ -59,7 +60,7 @@
 After a lot of trial and error, I've been able to piece together a pretty respectable Windows dev environment. There are plenty of guides already out there, but none of them seem to cover the entire scope. I tried to do that here, without getting too deep into any individual topic. I believe this will leave the majority of users with a smooth Windows developer experience.
 
 <p align="center">
-<img src="/images/demo.gif" alt="Using wox, windows term, ohmyzsh, and vs code" />
+<img src="images/demo.gif" alt="Using wox, windows term, ohmyzsh, and vs code" />
 </p>
 
 ## ☑ Prerequisites
@@ -75,7 +76,7 @@ The first and most important part of setting up your Windows dev environment is 
 
 WSL 2 is the latest version of WSL, adding new features like a full Linux kernel and full system call compatibility. There used to be a handful of steps needed to install it, but we now only need to enter the following command into PowerShell or Command Prompt:
 
-```shell
+```sh
 wsl --install
 ```
 
@@ -104,7 +105,7 @@ Once the process of installing your Linux distribution with WSL is complete, ope
 
 It is recommended that you regularly update and upgrade your packages. In Ubuntu or Debian, we use the `apt` package manager:
 
-```shell
+```sh
 sudo apt update && sudo apt upgrade
 ```
 
@@ -117,25 +118,25 @@ When you open the Windows file explorer, it displays your devices and drives. We
 1. Open the `\\wsl$\` location from file explorer:
 
 <p align="center">
-<img src="/images/search-bar.jpg" alt="File explorer search bar" width="800px" />
+<img src="images/search-bar.jpg" alt="File explorer search bar" width="800px" />
 </p>
 
 2. Right-click on the Ubuntu folder, and select `Map network drive`:
 
 <p align="center">
-<img src="/images/drive-map.jpg" alt="Mapping network drive" width="800px" />
+<img src="images/drive-map.jpg" alt="Mapping network drive" width="800px" />
 </p>
 
 3. - Select the drive letter you would like to use, leave `Reconnect at sign-in` checked and `Connect using different credentials` unchecked, and then click finish (mine will look slightly different because it's already been done):
 
 <p align="center">
-<img src="/images/network-folder.jpg" alt="Mapping network drive" />
+<img src="images/network-folder.jpg" alt="Mapping network drive" />
 </p>
 
 4. The end result should look something like this:
 
 <p align="center">
-<img src="/images/file-explorer.jpg" alt="File explorer" width="800px" />
+<img src="images/file-explorer.jpg" alt="File explorer" width="800px" />
 </p>
 
 If you wanted to access your Windows files from the Linux terminal, they are found in the `/mnt/` directory, so your Windows user directory would be located at `/mnt/c/Users/username`.
@@ -154,14 +155,14 @@ Another quick tip I have is to create a code directory inside of Ubuntu, and the
 4. Drag that new folder to the left, underneath the star icon that says `Quick access`
 
 <p align="center">
-<img src="/images/code-dir.jpg" alt="Microsoft Windows Logo" width="800px" />
+<img src="images/code-dir.jpg" alt="Microsoft Windows Logo" width="800px" />
 </p>
 
 ### Restarting WSL
 
 If for some reason WSL stops working, you can restart it with these two commands from PowerShell/Command Prompt:
 
-```shell
+```sh
 wsl.exe --shutdown
 wsl.exe
 ```
@@ -187,13 +188,13 @@ Windows Terminal will open a PowerShell or Command Prompt shell when launched by
 1. Select the `˅` icon from Windows Terminal and go to the Settings menu:
 
 <p align="center">
-<img src="/images/term-settings.jpg" alt="Windows terminal settings" width="800px" />
+<img src="images/term-settings.jpg" alt="Windows terminal settings" width="800px" />
 </p>
 
 2. In the Startup section you will find the Default profile dropdown, select Ubuntu. Below it, select Windows Terminal as the Default terminal application:
 
 <p align="center">
-<img src="/images/default-profile.jpg" alt="Default shell profile" width="800px" />
+<img src="images/default-profile.jpg" alt="Default shell profile" width="800px" />
 </p>
 
 #### Starting Directory
@@ -207,7 +208,7 @@ A default Ubuntu terminal will open to the root directory. To make finding your 
 5. If it is still opening into your `/` directory, change the `Command line` setting located right above the `Starting directory` input box to the following: `wsl.exe -d Ubuntu`
 
 <p align="center">
-<img src="/images/start-dir.jpg" alt="Starting directory in Ubuntu terminal" width="800px" />
+<img src="images/start-dir.jpg" alt="Starting directory in Ubuntu terminal" width="800px" />
 </p>
 
 There are many more settings to explore, and there is also a JSON file you can edit for more advanced customizations.
@@ -218,7 +219,7 @@ Check out [this guide](https://www.ubuntupit.com/best-windows-terminal-themes-an
 
 Git should come pre-installed on most, if not all of the WSL Linux distributions. To ensure you have the latest version, use the following command in an Ubuntu or Debian based distro:
 
-```shell
+```sh
 sudo apt install git
 ```
 
@@ -226,7 +227,7 @@ sudo apt install git
 
 To set up your Git config file, open a WSL command line and set your name with this command (replacing "Your Name" with your preferred username):
 
-```shell
+```sh
 git config --global user.name "Your Name"
 ```
 
@@ -234,7 +235,7 @@ git config --global user.name "Your Name"
 
 Set your email with this command (replacing "youremail@domain.com" with the email you prefer):
 
-```shell
+```sh
 git config --global user.email "youremail@domain.com"
 ```
 
@@ -242,7 +243,7 @@ git config --global user.email "youremail@domain.com"
 
 And finally, add your GitHub username to link it to git (case sensitive!):
 
-```shell
+```sh
 git config --global user.username "GitHub username"
 ```
 
@@ -267,7 +268,7 @@ Once you enter in your token the first time, it can be stored via [Git Credentia
 You can have Git installed in WSL and also in Windows at the same time. [Git for Windows](https://gitforwindows.org/) includes GCM and is the preferred way to install it.
 
 <p align="center">
-<img src="/images/gcm.png" alt="Windows Git Installer Menu" />
+<img src="images/gcm.png" alt="Windows Git Installer Menu" />
 </p>
 
 You can also download the [latest installer for Windows](https://github.com/GitCredentialManager/git-credential-manager/releases/latest) to install the GCM standalone version.
@@ -276,7 +277,7 @@ You can also download the [latest installer for Windows](https://github.com/GitC
 
 Once Git Credential Manager is installed you can set it up for use with WSL. Open your WSL terminal and enter this command:
 
-```shell
+```sh
 git config --global credential.helper "/mnt/c/Program\ Files/Git/mingw64/libexec/git-core/git-credential-manager-core.exe"
 ```
 
@@ -286,7 +287,7 @@ git config --global credential.helper "/mnt/c/Program\ Files/Git/mingw64/libexec
 
 ### Installing Zsh
 
-```shell
+```sh
 sudo apt install zsh
 ```
 
@@ -300,7 +301,7 @@ The most popular plugin framework by far is [OhMyZsh](https://ohmyz.sh/). It com
 
 First off, we need to make sure we have [cURL](https://curl.se/) installed. Short for "Client URL", it's a way to transfer data from the command line, and that's how we will download OhMyZsh.
 
-```shell
+```sh
 sudo apt install curl
 ```
 
@@ -308,7 +309,7 @@ sudo apt install curl
 
 Enter the following command into your terminal to install OhMyZsh:
 
-```shell
+```sh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
@@ -322,13 +323,13 @@ Autosuggestions for zsh, It suggests commands as you type based on history and c
 
 1. Clone this repository into `$ZSH_CUSTOM/plugins` (by default `~/.oh-my-zsh/custom/plugins`)
 
-```shell
+```sh
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
 
 2. Add the plugin to the list of plugins for Oh My Zsh to load (inside `~/.zshrc`):
 
-```shell
+```sh
 plugins=(git zsh-autosuggestions)
 ```
 
@@ -340,13 +341,13 @@ This package provides syntax highlighting for the shell zsh. It enables highligh
 
 1. Clone this repository in oh-my-zsh's plugins directory:
 
-```shell
+```sh
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ```
 
 2. Activate the plugin in `~/.zshrc`:
 
-```shell
+```sh
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 ```
 
@@ -364,7 +365,7 @@ You will likely need to switch between multiple versions of Node.js based on the
 
 1. Open your Ubuntu command line and Install nvm with:
 
-```shell
+```sh
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 ```
 
@@ -372,49 +373,49 @@ To verify installation, enter: `command -v nvm`. This should return 'nvm', if yo
 
 2. List which versions of Node are currently installed (should be none at this point):
 
-```shell
+```sh
 nvm ls
 ```
 
 <p align="center">
-<img src="/images/nvm-nonode.png" alt="Ubuntu terminal displaying node not installed" width="800px" />
+<img src="images/nvm-nonode.png" alt="Ubuntu terminal displaying node not installed" width="800px" />
 </p>
 
 3. Install both the current and stable LTS versions of Node.js.
 
 Install the current stable LTS release of Node.js (recommended for production applications):
 
-```shell
+```sh
 nvm install --lts
 ```
 
 Install the current release of Node.js (for testing latest Node.js features and improvements, but more likely to have issues):
 
-```shell
+```sh
 nvm install node
 ```
 
 4. List what versions of Node are installed:
 
-```shell
+```sh
 nvm ls
 ```
 
 Now you should see the two versions that you just installed listed.
 
 <p align="center">
-<img src="/images/nvm-node.png" alt="Ubuntu terminal displaying node installed" width="800px" />
+<img src="images/nvm-node.png" alt="Ubuntu terminal displaying node installed" width="800px" />
 </p>
 
 5. Verify that Node.js is installed and the current version:
 
-```shell
+```sh
 node --version
 ```
 
 Then verify that you have npm installed as well:
 
-```shell
+```sh
 npm --version
 ```
 
@@ -424,19 +425,19 @@ Use the following commands to change the version of Node you would like to use f
 
 To switch to the Current version:
 
-```shell
+```sh
 nvm use node
 ```
 
 To switch to the LTS version:
 
-```shell
+```sh
 nvm use --lts
 ```
 
 You can also use the specific number for any additional versions you've installed:
 
-```shell
+```sh
 nvm use v8.2.1.
 ```
 
@@ -455,11 +456,11 @@ VS Code is available on Windows, macOS, and Linux. You can download the latest W
 The WSL2 shell can be chosen as the default VS Code terminal by pressing `Ctrl` + `Shift` + `P` and typing/choosing Terminal: Select Default Profile, then selecting zsh:
 
 <p align="center">
-<img src="/images/command-palette.jpg" alt="VSCode default shell" width="800px" />
+<img src="images/command-palette.jpg" alt="VSCode default shell" width="800px" />
 </p>
 
 <p align="center">
-<img src="/images/zsh-profile.jpg" alt="VSCode default shell" width="800px" />
+<img src="images/zsh-profile.jpg" alt="VSCode default shell" width="800px" />
 </p>
 
 ### Remote Extension
@@ -472,7 +473,7 @@ This extension will also allow you to launch VS Code right from your WSL termina
 
 If I was inside the root directory of my repository, I would use `code .` to launch the entire directory inside VS Code.
 
-```shell
+```sh
 cd my-project
 code .
 ```
@@ -514,13 +515,13 @@ Before we start the installation process, I want to cover launching an administr
 Right-click on the Windows start menu and select Windows Terminal (Admin):
 
 <p align="center">
-<img src="/images/start-menu.png" alt="Right clicked Windows start menu" />
+<img src="images/start-menu.png" alt="Right clicked Windows start menu" />
 </p>
 
 Once your terminal loads, click the `˅` icon and open a new PowerShell tab. It should say `Administrator: Windows PowerShell` in the new tab:
 
 <p align="center">
-<img src="/images/adminps.png" alt="Admin PowerShell" width="800px" />
+<img src="images/adminps.png" alt="Admin PowerShell" width="800px" />
 </p>
 
 #### Option 2
@@ -528,7 +529,7 @@ Once your terminal loads, click the `˅` icon and open a new PowerShell tab. It 
 If you have Windows Terminal on your taskbar, `Shift` + `Right-Click` on the icon and select run as administrator, and then open a new PowerShell tab:
 
 <p align="center">
-<img src="/images/right-click-admin.png" alt="Right click windows terminal icon" />
+<img src="images/right-click-admin.png" alt="Right click windows terminal icon" />
 </p>
 
 #### Option 3
@@ -536,7 +537,7 @@ If you have Windows Terminal on your taskbar, `Shift` + `Right-Click` on the ico
 Use the search bar from the Start menu and type in `powershell`. A link to Run as Administrator will display:
 
 <p align="center">
-<img src="/images/powershell.png" alt="Search powershell from the start menu" width="800px" />
+<img src="images/powershell.png" alt="Search powershell from the start menu" width="800px" />
 </p>
 
 ### Installing Chocolatey
@@ -551,7 +552,7 @@ Use the search bar from the Start menu and type in `powershell`. A link to Run a
 
 4. Now run the following command:
 
-```shell
+```sh
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 ```
 
@@ -607,7 +608,7 @@ Here are a few of my favorite (free) apps for productivity and development on Wi
 
 You can download all these at once with the following command using chocolatey in an admin shell:
 
-```shell
+```sh
 choco install wox runjs responsively zeal figma drawio github-desktop postman notion -y
 ```
 
@@ -622,6 +623,98 @@ These are all available as [Firefox extensions](https://addons.mozilla.org/en-US
 - [Nimbus Capture](https://chrome.google.com/webstore/detail/nimbus-screenshot-screen/bpconcjcammlapcogcnnelfmaeghhagj) - Screen Capture full Web page or any part.
 - [WhatFont](https://chrome.google.com/webstore/detail/whatfont/jabopobgcpjmedljpbcaablpmlmfcogm) - With this extension, you could inspect web fonts by just hovering on them.
 - [JSON Formatter](https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa?hl=en) - Makes JSON easy to read.
+
+## 🇺🇸 VetsWhoCode Web App
+
+Let's get the VWC App installed and running locally. It will be our first step toward making Open-Source contributions to the organization!
+
+1. Clone the Repo
+
+Download the repository from GitHub using `git clone`:
+
+```sh
+git clone https://github.com/Vets-Who-Code/vets-who-code-app.git
+```
+
+<p align="center">
+<img src="images/clone.jpg" alt="Using git clone" width="800px" />
+</p>
+
+This make take a few minutes.
+
+2. Change Directory
+
+Change into the newly cloned directory:
+
+```sh
+cd vets-who-code-app
+```
+
+<p align="center">
+<img src="images/cd.jpg" alt="Changing to the app directory" width="800px" />
+</p>
+
+3. Install Node.js
+
+Using `nvm install` will install the version of Node.js required by the VWC app:
+
+```sh
+nvm install
+```
+
+<p align="center">
+<img src="images/nvm.jpg" alt="Install node with NVM" width="800px" />
+</p>
+
+4. Install Dependencies
+
+`npm install` is how we install React, Next, Bootstrap, and every other piece of tech that the app requires. This will also take a few minutes.
+
+```sh
+npm install
+```
+
+There will be **a lot** of warnings and other messages that display, but this is normal.
+
+<p align="center">
+<img src="images/npm1.jpg" alt="Installing dependencies with npm" width="800px" />
+</p>
+
+<p align="center">
+<img src="images/npm2.jpg" alt="Installing dependencies with npm continued" width="800px" />
+</p>
+
+5. Environment Variables
+
+Environment variables hold secret API keys and are needed to run the blog by connecting to the Contentful API.
+
+We can create a default .env file that will use mock data for the blog when running it locally. Use the following command from the root of the vets-who-code-app directory:
+
+```sh
+cp .env.example .env
+```
+
+<p align="center">
+<img src="images/env.jpg" alt="Creating the .env file" width="800px" />
+</p>
+
+6. Run the App
+
+Finally, we can launch the app on our local server:
+
+```sh
+npm run dev
+```
+
+<p align="center">
+<img src="images/run.jpg" alt="Run the vwc app locally" width="800px" />
+</p>
+
+You should be able to view the website locally at http://localhost:3000/.
+
+`CTRL` + `Left-Click` on the localhost link in your terminal to launch the app in your browser.
+
+`CTRL` + `C` to close the dev server when you are finished.
 
 ## ➕ Extracurriculars
 
