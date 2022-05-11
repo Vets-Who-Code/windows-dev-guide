@@ -127,7 +127,7 @@ When you open the Windows file explorer, it displays your devices and drives. We
 <img src="images/drive-map.jpg" alt="Mapping network drive" width="800px" />
 </p>
 
-3. - Select the drive letter you would like to use, leave `Reconnect at sign-in` checked and `Connect using different credentials` unchecked, and then click finish (mine will look slightly different because it's already been done):
+3. Select the drive letter you would like to use, leave `Reconnect at sign-in` checked and `Connect using different credentials` unchecked, and then click finish (mine will look slightly different because it's already been done):
 
 <p align="center">
 <img src="images/network-folder.jpg" alt="Mapping network drive" />
