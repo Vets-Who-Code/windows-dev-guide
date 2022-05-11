@@ -13,7 +13,7 @@
   - [Mapping Your Linux Drive](#mapping-your-linux-drive)
     - [Pin Your Code Directory](#pin-your-code-directory)
   - [Restarting WSL](#restarting-wsl)
-- [Windows Terminal](#windows-terminal-4)
+- [👨‍💻 Windows Terminal](#windows-terminal-4)
   - [Installing Windows Terminal](#installing-windows-terminal)
   - [Terminal Settings](#terminal-settings)
     - [Default Profile](#default-profile)
@@ -127,7 +127,7 @@ When you open the Windows file explorer, it displays your devices and drives. We
 <img src="images/drive-map.jpg" alt="Mapping network drive" width="800px" />
 </p>
 
-3. - Select the drive letter you would like to use, leave `Reconnect at sign-in` checked and `Connect using different credentials` unchecked, and then click finish (mine will look slightly different because it's already been done):
+3. Select the drive letter you would like to use, leave `Reconnect at sign-in` checked and `Connect using different credentials` unchecked, and then click finish (mine will look slightly different because it's already been done):
 
 <p align="center">
 <img src="images/network-folder.jpg" alt="Mapping network drive" />
@@ -155,7 +155,7 @@ Another quick tip I have is to create a code directory inside of Ubuntu, and the
 4. Drag that new folder to the left, underneath the star icon that says `Quick access`
 
 <p align="center">
-<img src="images/code-dir.jpg" alt="Microsoft Windows Logo" width="800px" />
+<img src="images/code-dir.jpg" alt="My code directory" width="800px" />
 </p>
 
 ### Restarting WSL
@@ -169,7 +169,7 @@ wsl.exe
 
 If you go back to your Linux shell everything should be back to normal.
 
-## Windows Terminal [^4]
+## 👨‍💻 Windows Terminal [^4]
 
 To launch a Linux terminal we currently need to use the Ubuntu icon from the Start menu or enter the `wsl` or `bash` commands into PowerShell/Command Prompt. Another option that will give us more features like tabs, split views, themes, transparency, and key bindings, is to use the Windows Terminal. There are also a few other terminals like [Cmder](https://cmder.net/), [ConEmu](https://conemu.github.io/), or [Hyper](https://hyper.is/), but in my experience, Windows Terminal works extremely well.
 
@@ -605,11 +605,12 @@ Here are a few of my favorite (free) apps for productivity and development on Wi
 - [GitHub Desktop](https://desktop.github.com/) - A GUI for Git
 - [Postman](https://www.postman.com/) - API tools
 - [Notion](https://www.notion.so/) - Project management and note-taking software
+- [Microsoft PowerToys](https://docs.microsoft.com/en-us/windows/powertoys/?WT.mc_id=twitter-0000-docsmsft) - A set of utilities for power users
 
 You can download all these at once with the following command using chocolatey in an admin shell:
 
 ```sh
-choco install wox runjs responsively zeal figma drawio github-desktop postman notion -y
+choco install wox runjs responsively zeal figma drawio github-desktop postman notion powertoys -y
 ```
 
 ## 🪜 Chrome Extensions
