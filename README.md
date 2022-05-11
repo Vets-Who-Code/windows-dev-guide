@@ -155,7 +155,7 @@ Another quick tip I have is to create a code directory inside of Ubuntu, and the
 4. Drag that new folder to the left, underneath the star icon that says `Quick access`
 
 <p align="center">
-<img src="images/code-dir.jpg" alt="Microsoft Windows Logo" width="800px" />
+<img src="images/code-dir.jpg" alt="My code directory" width="800px" />
 </p>
 
 ### Restarting WSL
