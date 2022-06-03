@@ -605,11 +605,12 @@ Here are a few of my favorite (free) apps for productivity and development on Wi
 - [GitHub Desktop](https://desktop.github.com/) - A GUI for Git
 - [Postman](https://www.postman.com/) - API tools
 - [Notion](https://www.notion.so/) - Project management and note-taking software
+- [Microsoft PowerToys](https://docs.microsoft.com/en-us/windows/powertoys/?WT.mc_id=twitter-0000-docsmsft) - A set of utilities for power users
 
 You can download all these at once with the following command using chocolatey in an admin shell:
 
 ```sh
-choco install wox runjs responsively zeal figma drawio github-desktop postman notion -y
+choco install wox runjs responsively zeal figma drawio github-desktop postman notion powertoys -y
 ```
 
 ## 🪜 Chrome Extensions
