@@ -13,7 +13,7 @@
   - [Mapping Your Linux Drive](#mapping-your-linux-drive)
     - [Pin Your Code Directory](#pin-your-code-directory)
   - [Restarting WSL](#restarting-wsl)
-- [Windows Terminal](#windows-terminal-4)
+- [👨‍💻 Windows Terminal](#windows-terminal-4)
   - [Installing Windows Terminal](#installing-windows-terminal)
   - [Terminal Settings](#terminal-settings)
     - [Default Profile](#default-profile)
@@ -169,7 +169,7 @@ wsl.exe
 
 If you go back to your Linux shell everything should be back to normal.
 
-## Windows Terminal [^4]
+## 👨‍💻 Windows Terminal [^4]
 
 To launch a Linux terminal we currently need to use the Ubuntu icon from the Start menu or enter the `wsl` or `bash` commands into PowerShell/Command Prompt. Another option that will give us more features like tabs, split views, themes, transparency, and key bindings, is to use the Windows Terminal. There are also a few other terminals like [Cmder](https://cmder.net/), [ConEmu](https://conemu.github.io/), or [Hyper](https://hyper.is/), but in my experience, Windows Terminal works extremely well.
 
