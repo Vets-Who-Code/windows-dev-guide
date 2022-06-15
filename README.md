@@ -4,6 +4,8 @@
 
 <h1 align="center">Windows Developer Setup Guide (2022)</h1>
 
+English | [中文](./README_cn.md)
+
 - [🔭 Overview](#-overview)
 - [☑ Prerequisites](#-prerequisites)
 - [🐧 WSL](#-wsl-1-2-3)
