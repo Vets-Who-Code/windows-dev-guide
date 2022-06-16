@@ -1,3 +1,67 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [🔭概述](#概述)
+- [☑先决条件](#先决条件)
+- [🐧 WSL^1](#-wsl13)
+  - [安装 WSL 2](#安装-wsl-2)
+  - [用户配置](#用户配置)
+  - [更新 Linux](#更新-linux)
+  - [映射你的 Linux 驱动器](#映射你的-linux-驱动器)
+    - [Pin Your Code Directory](#pin-your-code-directory)
+  - [重启 WSL](#重启-wsl)
+- [👨💻 Windows 终端[^4]](#-windows-终端4)
+  - [安装 Windows 终端](#安装-windows-终端)
+  - [终端设置](#终端设置)
+    - [默认配置文件](#默认配置文件)
+    - [开始目录](#开始目录)
+- [📝 Git 配置[^5]](#-git-配置5)
+  - [姓名](#姓名)
+  - [电子邮件](#电子邮件)
+  - [用户名](#用户名)
+- [😺 GitHub 凭据[^6]](#-github-凭据6)
+  - [创建你的个人访问令牌](#创建你的个人访问令牌)
+  - [Git 凭据管理器](#git-凭据管理器)
+  - [存储令牌](#存储令牌)
+- [💤 Zsh[^7]](#-zsh7)
+  - [安装 Zsh](#安装-zsh)
+  - [OhMyZsh](#ohmyzsh)
+  - [cURL](#curl)
+  - [安装 OhMyZsh](#安装-ohmyzsh)
+  - [更多插件](#更多插件)
+    - [https://github.com/zsh-users/zsh-autosuggestions](#httpsgithubcomzsh-userszsh-autosuggestions)
+    - [[zsh-语法高亮]（https://github.com/zsh-users/zsh-syntax-highlighting）](#zsh-语法高亮httpsgithubcomzsh-userszsh-syntax-highlighting)
+- [📦 Node.js[^8]](#-nodejs8)
+  - [NVM](#nvm)
+    - [安装 NVM](#安装-nvm)
+    - [更改节点版本](#更改节点版本)
+- [💻 Visual Studio 代码](#-visual-studio-代码)
+  - [安装 VS Code](#安装-vs-code)
+  - [更改默认外壳](#更改默认外壳)
+  - [远程扩展](#远程扩展)
+  - [更多扩展](#更多扩展)
+- [🍫巧克力[^9]](#巧克力9)
+  - [管理外壳](#管理外壳)
+    - [选项 1](#选项-1)
+    - [选项 2](#选项-2)
+    - [选项 3](#选项-3)
+  - [安装 Chocolatey](#安装-chocolatey)
+  - [基本 Chocolatey 命令](#基本-chocolatey-命令)
+  - [Windows 应用程序](#windows-应用程序)
+- [🪜 Chrome 扩展](#-chrome-扩展)
+- [🇺🇸 VetsWhoCode Web App](#-vetswhocode-web-app)
+- [➕课外活动](#课外活动)
+  - [露比](#露比)
+  - [轨道](#轨道)
+  - [Windows 上的 Python 开发](#windows-上的-python-开发)
+  - [RStudio 服务器](#rstudio-服务器)
+  - [PHP7 灯堆栈](#php7-灯堆栈)
+  - [PHP8](#php8)
+  - [安装数据库](#安装数据库)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 <p align="center">
 <img src="images/windows.jpg" alt="Microsoft Windows Logo" width="500px" />
 </p>
@@ -67,7 +131,7 @@
 
 ## ☑先决条件
 
-- Windows 10 版本 2004 及更高版本（Build 19041 及更高版本）或 Windows 11[（我有哪个版本？）](https://support.microsoft.com/en-us/topic/628bec99-476a-2c13-5296-9dd081cdd808)
+- Windows 10 版本 2004 及更高版本（Build 19041 及更高版本）或 Windows 11[（我是哪个版本？）](https://support.microsoft.com/en-us/topic/628bec99-476a-2c13-5296-9dd081cdd808)
 - [GitHub](https://github.com)帐户
 
 ## 🐧 WSL[^1][^2][^3]
