@@ -42,7 +42,7 @@
     - [更改node版本](#更改node版本)
 - [💻 Visual Studio 代码](#-visual-studio-代码)
   - [安装 VS Code](#安装-vs-code)
-  - [更改默认外壳](#更改默认外壳)
+  - [更改默认主题](#更改默认主题)
   - [远程扩展](#远程扩展)
   - [更多扩展](#更多扩展)
 - [🍫Chocolatey](#Chocolatey9)
@@ -477,7 +477,7 @@ nvm use v8.2.1.
 
 VS Code 在 Windows、macOS 和 Linux 上可用。你可以下载最新的 Windows 安装程序[here](https://code.visualstudio.com/)。我建议使用稳定版本。
 
-### 更改默认外壳
+### 更改默认主题
 
 WSL2 shell 可以通过按下 `Ctrl` + `Shift` + `P` 并键入/选择终端：选择默认配置文件，然后选择 zsh：
 
