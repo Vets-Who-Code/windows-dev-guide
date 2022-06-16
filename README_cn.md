@@ -34,8 +34,8 @@
   - [cURL](#curl)
   - [安装 OhMyZsh](#安装-ohmyzsh)
   - [更多插件](#更多插件)
-    - [https://github.com/zsh-users/zsh-autosuggestions](#httpsgithubcomzsh-userszsh-autosuggestions)
-    - [[zsh-语法高亮]（https://github.com/zsh-users/zsh-syntax-highlighting）](#zsh-语法高亮httpsgithubcomzsh-userszsh-syntax-highlighting)
+    - [zsh-autosuggestions](#zsh-autosuggestions)
+    - [zsh-syntax-highlighting](#zsh-syntax-highlighting)
 - [📦 Node.js[^8]](#-nodejs8)
   - [NVM](#nvm)
     - [安装 NVM](#安装-nvm)
@@ -337,7 +337,7 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 
 ### 更多插件
 
-#### https://github.com/zsh-users/zsh-autosuggestions
+#### [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
 
 zsh 的自动建议，它根据历史记录和完成情况在你键入时建议命令。
 
@@ -357,7 +357,7 @@ plugins=(git zsh-autosuggestions)
 
 3. 开始新的终端会话。
 
-#### [zsh-语法高亮]（https://github.com/zsh-users/zsh-syntax-highlighting）
+#### [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
 
 此包为 shell zsh 提供语法高亮显示。当命令在 zsh 提示符下输入到交互式终端时，它可以高亮显示命令。这有助于在运行命令之前查看命令，特别是在捕获语法错误方面。
 
@@ -450,7 +450,7 @@ node --version
 npm --version
 ```
 
-#### 更改节点版本
+#### 更改node版本
 
 使用以下命令更改要用于任何给定项目的 Node 版本：
 
@@ -658,13 +658,13 @@ choco install wox runjs responsively zeal figma drawio github-desktop postman no
 
 这些都以[Firefox 扩展](https://addons.mozilla.org/en-US/firefox/extensions/)的形式提供。
 
-- [React 开发工具](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)-将 React 调试工具添加到 ChromeDeveloper Tools。
+- [](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)-将 React 调试工具添加到 ChromeDeveloper Tools。
 - [ColorZilla](https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp)-高级吸管、颜色选择器、渐变生成器和其他丰富多彩的好东西
-- [斧头可访问性](https://chrome.google.com/webstore/detail/axe-devtools-web-accessib/lhdoppojpmngadmnindnejefpokejbdd)-Chrome 中开发人员、测试人员和设计人员的可访问性检查器
+- [Axe Accessibility](https://chrome.google.com/webstore/detail/axe-devtools-web-accessib/lhdoppojpmngadmnindnejefpokejbdd)-Chrome 中开发人员、测试人员和设计人员的可访问性检查器
 - [daily.dev](https://chrome.google.com/webstore/detail/dailydev-the-homepage-dev/jlmpjdjjbgclbocgajdjefcidcncaied)-获取为你个性化的最热门开发者新闻的提要。
-- [光轮捕获](https://chrome.google.com/webstore/detail/nimbus-screenshot-screen/bpconcjcammlapcogcnnelfmaeghhagj)-屏幕捕获完整网页或任何部分。
+- [Nimbus Capture](https://chrome.google.com/webstore/detail/nimbus-screenshot-screen/bpconcjcammlapcogcnnelfmaeghhagj)-屏幕捕获完整网页或任何部分。
 - [WhatFont](https://chrome.google.com/webstore/detail/whatfont/jabopobgcpjmedljpbcaablpmlmfcogm)-使用此扩展，你可以通过将鼠标悬停在 Web 字体上来检查它们。
-- [JSON 格式](https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa?hl=en)-使 JSON 易于阅读。
+- [JSON Formatter](https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa?hl=en)-使 JSON 易于阅读。
 
 ## 🇺🇸 VetsWhoCode Web App
 
