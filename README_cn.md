@@ -650,7 +650,7 @@ choco install wox runjs responsively zeal figma drawio github-desktop postman no
 
 这些都以[Firefox 扩展](https://addons.mozilla.org/en-US/firefox/extensions/)的形式提供。
 
-- [](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)-将 React 调试工具添加到 ChromeDeveloper Tools。
+- [React Dev tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)-将 React 调试工具添加到 ChromeDeveloper Tools。
 - [ColorZilla](https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp)-高级吸管、颜色选择器、渐变生成器和其他丰富多彩的好东西
 - [Axe Accessibility](https://chrome.google.com/webstore/detail/axe-devtools-web-accessib/lhdoppojpmngadmnindnejefpokejbdd)-Chrome 中开发人员、测试人员和设计人员的可访问性检查器
 - [daily.dev](https://chrome.google.com/webstore/detail/dailydev-the-homepage-dev/jlmpjdjjbgclbocgajdjefcidcncaied)-获取为你个性化的最热门开发者新闻的提要。
