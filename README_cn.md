@@ -1,6 +1,10 @@
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+<p align="center">
+<img src="images/windows.jpg" alt="Microsoft Windows Logo" width="500px" />
+</p>
+
+<h1 align="center">Windows 开发人员设置指南（2022）</h1>
+
+英语 |[中文](./README_cn.md)
 
 - [🔭概述](#概述)
 - [☑先决条件](#先决条件)
@@ -59,67 +63,6 @@
   - [PHP7 灯堆栈](#php7-灯堆栈)
   - [PHP8](#php8)
   - [安装数据库](#安装数据库)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
-<p align="center">
-<img src="images/windows.jpg" alt="Microsoft Windows Logo" width="500px" />
-</p>
-
-<h1 align="center">Windows 开发人员设置指南（2022）</h1>
-
-英语 |[中文](./README_cn.md)
-
-- [🔭概述]（#-概述）
-- [☑先决条件]（#-先决条件）
-- [🐧 WSL]（#-wsl-1-2-3）
-  - [安装 WSL 2]（# 安装-wsl-2）
-  - [用户配置]（#user-config）
-  - Linux 更新
-  - 映射 Linux 驱动器
-    - [固定你的代码目录]（#pin-your-code-目录）
-  - 重启 WSL
-- 👨💻 Windows 终端
-  - 安装 Windows 终端
-  - [终端设置]（# 终端设置）
-    - 默认配置文件
-    - 初始目录
-- [📝 Git 配置]（#-git-config-5）
-  - [姓名]（# 名称）
-  - [电子邮件]（# 电子邮件）
-  - [用户名]（# 用户名）
-- 😺 GitHub 凭据
-  - 创建个人访问令牌
-  - [git 凭据管理器]（#git 凭据管理器）
-  - [存储令牌]（# 存储令牌）
-- [💤 Zsh]（#-zsh-7）
-  - [安装 zsh]（# 安装 zsh）
-  - [OhMyZsh]（#ohmyzsh）
-  - [cURL]（#curl）
-  - [安装 OhMyZsh]（# 安装-ohmyzsh）
-  - [更多插件]（# 更多插件）
-    - [zsh-自动建议]（#zsh-自动建议）
-    - [zsh-语法-高亮]（#zsh-语法-高亮）
-- [📦 Node.js]（#-nodejs-8）
-  - [NVM]（#nvm）
-    - 安装 NVM
-    - 更改节点版本
-- 💻 Visual Studio 代码
-  - 安装 VS 代码
-  - [更改默认外壳]（# 更改默认外壳）
-  - [远程扩展]（# 远程扩展）
-  - [更多扩展]（# 更多扩展）
-- [🍫 Chocolatey]（#-chocolatey-9）
-  - 管理外壳
-    - [选项 1]（# 选项-1）
-    - [选项 2]（# 选项 2）
-    - [选项 3]（# 选项-3）
-  - [安装巧克力]（# 安装巧克力）
-  - [Basic Chocolatey 命令]（#basic-chocolatey 命令）
-  - [Windows 应用程序]（#windows 应用程序）
-- 🪜 Chrome 扩展
-- [🇺🇸 VetsWhoCode 网络应用程序]（#-vetswhocode-web-app）
-- [➕课外活动]（#-课外活动）
 
 ## 🔭概述
 
