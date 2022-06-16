@@ -8,12 +8,12 @@
 
 - [🔭概述](#概述)
 - [☑先决条件](#先决条件)
-- [🐧 WSL^1](#-wsl13)
+- [🐧 WSL^1](#-WSL[^1][^2][^3])
   - [安装 WSL 2](#安装-wsl-2)
   - [用户配置](#用户配置)
   - [更新 Linux](#更新-linux)
   - [映射你的 Linux 驱动器](#映射你的-linux-驱动器)
-    - [Pin Your Code Directory](#pin-your-code-directory)
+    - [固定代码目录](#固定代码目录)
   - [重启 WSL](#重启-wsl)
 - [👨💻 Windows 终端[^4]](#-windows-终端4)
   - [安装 Windows 终端](#安装-windows-终端)
@@ -156,7 +156,7 @@ Windows 不会自动更新或升级你的 Linux 发行版。这是大多数 Linu
 
 但是，建议将你的项目文件存储在 Linux 文件系统上。这将比从 Windows 访问文件快得多，而且也可能有点错误。
 
-#### Pin Your Code Directory
+#### 固定代码目录
 
 我的另一个快速提示是在 Ubuntu 中创建一个代码目录，然后将其固定到文件资源管理器左侧的快速访问菜单上。在 Windows 和 Linux 之间快速传输文件时，这会派上用场。
 
@@ -536,7 +536,7 @@ VS Code 可用的扩展数量可能是压倒性的，这里有一些我使用最
 
 注意：>你需要为 Remote-WSL 安装任何 VS Code 扩展。已在 VS Code 上本地安装的扩展将不会自动可用。[Learn more](https://code.visualstudio.com/docs/remote/wsl#_managing-extensions)。
 
-## 🍫巧克力[^9]
+## 🍫Chocolatey[^9]
 
 Chocolatey 是一个类似于[homebrew](https://brew.sh/)的包管理器，但适用于 Windows。
 
@@ -776,11 +776,11 @@ npm run dev
 
 <details>
 
-  <summary>💎露比</summary>
+  <summary>💎Ruby</summary>
 
-### 露比
+### Ruby
 
-### 轨道
+### Rails
 
 </details>
 
@@ -797,20 +797,19 @@ npm run dev
 </details>
 
 <details>
-
-<summary>⚙锈</summary>
-
-</details>
-
-<details>
-
-  <summary>🦡去</summary>
+<summary>⚙Rust</summary>
 
 </details>
 
 <details>
 
-  <summary>® 河</summary>
+  <summary>🦡Go</summary>
+
+</details>
+
+<details>
+
+  <summary>® R</summary>
 
 ### RStudio 服务器
 
@@ -846,7 +845,7 @@ npm run dev
 
 <details>
 
-  <summary>💾数据库</summary>
+  <summary>💾Databases</summary>
 
 ### 安装数据库
 
@@ -863,5 +862,5 @@ npm run dev
 [^5]：[Git a Grip](https://dev.to/stephanlamoureux/series/11364)
 [^6]：[Git 凭据管理器](https://github.com/GitCredentialManager/git-credential-manager)
 [^7]：[在 WSL 中使用 Zsh](http://kevinprogramming.com/using-zsh-in-windows-terminal/)
-[^8]：[在 WSL 上安装节点](https://docs.microsoft.com/en-us/windows/dev-environment/javascript/nodejs-on-wsl)
+[^8]：[在 WSL 上安装node](https://docs.microsoft.com/en-us/windows/dev-environment/javascript/nodejs-on-wsl)
 [^9]：[Chocolatey 安装文档](https://chocolatey.org/install)
