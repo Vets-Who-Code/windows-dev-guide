@@ -8,7 +8,7 @@
 
 - [🔭概述](#概述)
 - [☑先决条件](#先决条件)
-- [🐧 WSL^1](#-WSL[^1][^2][^3])
+- [🐧 WSL^1](#-wsl-1-2-3)
   - [安装 WSL 2](#安装-wsl-2)
   - [用户配置](#用户配置)
   - [更新 Linux](#更新-linux)
@@ -39,14 +39,14 @@
 - [📦 Node.js[^8]](#-nodejs8)
   - [NVM](#nvm)
     - [安装 NVM](#安装-nvm)
-    - [更改节点版本](#更改节点版本)
+    - [更改node版本](#更改node版本)
 - [💻 Visual Studio 代码](#-visual-studio-代码)
   - [安装 VS Code](#安装-vs-code)
   - [更改默认外壳](#更改默认外壳)
   - [远程扩展](#远程扩展)
   - [更多扩展](#更多扩展)
-- [🍫巧克力[^9]](#巧克力9)
-  - [管理外壳](#管理外壳)
+- [🍫Chocolatey[^9]](#Chocolatey9)
+  - [管理shell](#管理shell)
     - [选项 1](#选项-1)
     - [选项 2](#选项-2)
     - [选项 3](#选项-3)
@@ -77,7 +77,7 @@
 - Windows 10 版本 2004 及更高版本（Build 19041 及更高版本）或 Windows 11[（我是哪个版本？）](https://support.microsoft.com/en-us/topic/628bec99-476a-2c13-5296-9dd081cdd808)
 - [GitHub](https://github.com)帐户
 
-## 🐧 WSL[^1][^2][^3]
+## 🐧 wsl
 
 设置 Windows 开发环境的第一个也是最重要的部分是安装 WindowsLinux 子系统（WSL）。我建议坚持使用 Ubuntu，但可以随意尝试尽可能多的发行版。一次安装多个发行版没有问题。
 
@@ -540,7 +540,7 @@ VS Code 可用的扩展数量可能是压倒性的，这里有一些我使用最
 
 Chocolatey 是一个类似于[homebrew](https://brew.sh/)的包管理器，但适用于 Windows。
 
-### 管理外壳
+### 管理shell
 
 在我们开始安装过程之前，我想介绍一下从 windows 启动管理 shell。有几种方法可以做到这一点：
 
