@@ -756,7 +756,7 @@ npm run dev
 
 `CTRL` + `C` 完成后关闭开发服务器。
 
-## ➕课外活动
+## ➕其他环境
 
 我们可以使用更多的语言和工具。如果你对 JavaScript 和 Web 开发以外的内容感兴趣，请查看以下指南，以将你的开发环境提升到一个新的水平。
 
@@ -803,7 +803,7 @@ npm run dev
 
   <summary>® R</summary>
 
-### RStudio 服务器
+### RStudio Server
 
 >RStudio Server 使你能够为在远程 Linux 服务器上运行的 R 版本提供基于浏览器的界面，将 RStudio IDE 的强大功能和生产力带到基于服务器的 R 部署中。
 
@@ -815,7 +815,7 @@ npm run dev
 
   <summary>🅿 PHP</summary>
 
-### PHP7 灯堆栈
+### PHP7 
 
 >安装 Apache、MySQL 和 PHP 为了创建 LAMP 堆栈的基本结构（Linux、Apache、MySQL、PHP）。
 
