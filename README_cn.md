@@ -15,48 +15,48 @@ English | [中文](./README_cn.md)
   - [安装 WSL 2](#安装-wsl-2)
   - [用户配置](#用户配置)
   - [更新Linux](#更新Linux)
-  - [Mapping Your Linux Drive](#mapping-your-linux-drive)
-    - [Pin Your Code Directory](#pin-your-code-directory)
-  - [Restarting WSL](#restarting-wsl)
-- [👨‍💻 Windows Terminal](#windows-terminal-4)
-  - [Installing Windows Terminal](#installing-windows-terminal)
-  - [Terminal Settings](#terminal-settings)
-    - [Default Profile](#default-profile)
-    - [Starting Directory](#starting-directory)
-- [📝 Git Config](#-git-config-5)
+  - [映射您的Linux驱动器](#映射您的Linux驱动器)
+    - [固定代码目录](#固定代码目录)
+  - [重启WSL](#重启WSL)
+- [👨‍💻 Windows Terminal](#windows-terminal)
+  - [安装 Windows Terminal](#安装 Windows Terminal)
+  - [终端设置](#终端设置)
+    - [默认配置文件](#默认配置文件)
+    - [初始目录](#初始目录)
+- [📝 Git Config](#Git Config)
   - [Name](#name)
   - [Email](#email)
   - [Username](#username)
 - [😺 GitHub Credentials](#-github-credentials-6)
-  - [Creating your Personal Access Token](#creating-your-personal-access-token)
-  - [Git Credential Manager](#git-credential-manager)
-  - [Storing Your Token](#storing-your-token)
+  - [创建个人token](#创建个人token)
+  - [Git管理](#Git管理)
+  - [存储token](#存储token)
 - [💤 Zsh](#-zsh-7)
-  - [Installing Zsh](#installing-zsh)
+  - [安装 Zsh](#安装 Zsh)
   - [OhMyZsh](#ohmyzsh)
   - [cURL](#curl)
-  - [Installing OhMyZsh](#installing-ohmyzsh)
-  - [More Plugins](#more-plugins)
+  - [安装 OhMyZsh](#安装 ohmyzsh)
+  - [更多插件](#more-plugins)
     - [zsh-autosuggestions](#zsh-autosuggestions)
     - [zsh-syntax-highlighting](#zsh-syntax-highlighting)
 - [📦 Node.js](#-nodejs-8)
   - [NVM](#nvm)
-    - [Installing NVM](#installing-nvm)
-    - [Changing Node Version](#changing-node-version)
+    - [安装 NVM](#安装 NVM)
+    - [更换 Node 版本](#更换 Node 版本)
 - [💻 Visual Studio Code](#-visual-studio-code)
-  - [Installing VS Code](#installing-vs-code)
-  - [Changing the Default Shell](#changing-the-default-shell)
-  - [Remote Extension](#remote-extension)
-  - [More Extensions](#more-extensions)
+  - [安装 VS Code](#安装 vs-code)
+  - [更换默认终端](#更换默认终端)
+  - [远程拓展](#远程拓展)
+  - [更多拓展](#更多拓展)
 - [🍫 Chocolatey](#-chocolatey-9)
   - [Admin Shell](#admin-shell)
     - [Option 1](#option-1)
     - [Option 2](#option-2)
     - [Option 3](#option-3)
-  - [Installing Chocolatey](#installing-chocolatey)
-  - [Basic Chocolatey Commands](#basic-chocolatey-commands)
+  - [安装 Chocolatey](#安装 Chocolatey)
+  - [基础 Chocolatey 命令](#基础 Chocolatey 命令)
   - [Windows Apps](#windows-apps)
-- [🪜 Chrome Extensions](#-chrome-extensions)
+- [🪜 Chrome 拓展](#-chrome 拓展)
 - [🇺🇸 VetsWhoCode Web App](#-vetswhocode-web-app)
 - [➕ Extracurriculars](
 
@@ -67,3 +67,27 @@ English | [中文](./README_cn.md)
 <p align="center">
 <img src="images/demo.gif" alt="Using wox, windows term, ohmyzsh, and vs code" />
 </p>
+
+## ☑ 开始之前
+- Windows 10 version 2004 and higher (Build 19041 and higher) or Windows 11 [(Which version do I have?)](https://support.microsoft.com/en-us/topic/628bec99-476a-2c13-5296-9dd081cdd808)
+- 一个 [GitHub](https://github.com) 账户
+
+## 🐧 WSL [^1] [^2] [^3]
+设置Windows开发环境的第一个也是最重要的部分是安装Windows Subsystem for Linux（WSL）。我建议坚持使用Ubuntu，但可以随意尝试你喜欢的发行版。同时安装多个发行版是没有问题的。
+
+### 安装-wsl-2
+
+WSL 2是WSL的最新版本，增加了新的功能，如完整的Linux内核和完整的系统调用兼容性。以前安装它需要几个步骤，但现在我们只需要在PowerShell或Command Prompt中输入以下命令即可。
+
+```sh
+wsl --install
+```
+
+这条命令的作用是：
+
+- 启用可选的WSL和虚拟机平台组件
+- 下载并安装最新的Linux内核
+- 设置WSL 2为默认值
+- 下载并安装Ubuntu Linux发行版（可能需要重新启动）。
+
+使用`--install`命令默认为Ubuntu，只有在WSL还没有安装的情况下才有效。如果你想改变你的默认Linux发行版, [跟着这篇文章](https://docs.microsoft.com/en-us/windows/wsl/install#change-the-default-Linux-distribution-installed).
