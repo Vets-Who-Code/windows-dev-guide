@@ -4,7 +4,7 @@
 
 <h1 align="center">Windows 开发人员设置指南（2022）</h1>
 
-英语 |[中文](./README_cn.md)
+[英文](./README.md) | [中文](./README_cn.md)
 
 - [🔭概述](#概述)
 - [☑先决条件](#先决条件)
