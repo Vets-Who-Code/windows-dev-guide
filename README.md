@@ -2,7 +2,7 @@
 <img src="images/windows.jpg" alt="Microsoft Windows Logo" width="500px" />
 </p>
 
-<h1 align="center">Windows Developer Setup Guide (2022)</h1>
+<h1 align="center">Windows Web Developer Setup Guide (2022)</h1>
 
 English | [中文](./README_cn.md)
 
@@ -50,6 +50,7 @@ English | [中文](./README_cn.md)
     - [Option 1](#option-1)
     - [Option 2](#option-2)
     - [Option 3](#option-3)
+    - [Option 4](#option-4)
   - [Installing Chocolatey](#installing-chocolatey)
   - [Basic Chocolatey Commands](#basic-chocolatey-commands)
   - [Windows Apps](#windows-apps)
@@ -70,7 +71,7 @@ After a lot of trial and error, I've been able to piece together a pretty respec
 - Windows 10 version 2004 and higher (Build 19041 and higher) or Windows 11 [(Which version do I have?)](https://support.microsoft.com/en-us/topic/628bec99-476a-2c13-5296-9dd081cdd808)
 - A [GitHub](https://github.com) account
 
-## 🐧 wsl
+## 🐧 WSL [^1] [^2] [^3]
 
 The first and most important part of setting up your Windows dev environment is installing the Windows Subsystem for Linux (WSL). I recommend sticking with Ubuntu, but feel free to try out as many distributions as you like. There are no issues with having multiple distributions installed at once.
 
@@ -181,7 +182,7 @@ Windows 11 comes with Windows Terminal by default, but If you are using Windows 
 
 ### Terminal Settings
 
-A couple of quick things I recommend setting up is the default profile and your starting home directory. These settings make it so launching Windows Terminal will open directly into WSL inside our user's home directory.
+A couple of quick things I recommend setting up are the default profile and your starting home directory. These settings make it so launching Windows Terminal will open directly into WSL inside our user's home directory.
 
 #### Default Profile
 
@@ -283,17 +284,34 @@ Once Git Credential Manager is installed you can set it up for use with WSL. Ope
 git config --global credential.helper "/mnt/c/Program\ Files/Git/mingw64/libexec/git-core/git-credential-manager-core.exe"
 ```
 
+Note:
+
+If you ever receive the following error message:
+
+```sh
+/mnt/c/Program\ Files/Git/mingw64/libexec/git-core/git-credential-manager-core.exe store: 1: 
+/mnt/c/Program Files/Git/mingw64/libexec/git-core/git-credential-manager-core.exe: not found
+```
+
+Try using the this command:
+
+```sh
+git config --global credential.helper store
+```
+
 ## 💤 Zsh [^7]
 
  Z shell works almost identically to the standard BASH shell found on default Linux installs. What makes it different is its support for plugins and themes, along with some extra features like spelling correction and recursive path expansion. It's time to throw BASH in the trash!
 
 ### Installing Zsh
 
+Zsh can be installed with one command:
+
 ```sh
 sudo apt install zsh
 ```
 
-After installing, type the `zsh` command. Zsh will ask you to choose some configurations. We will do this later on while installing oh-my-zsh, so choose option 0 to create the config file and prevent this message from showing again.
+After installing, type the `zsh` command. Zsh will ask you to choose some configurations. We will do this later on while installing oh-my-zsh, so choose option `0` to create the config file and prevent this message from showing again.
 
 ### OhMyZsh
 
@@ -315,9 +333,13 @@ Enter the following command into your terminal to install OhMyZsh:
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
-That's it! You should now see a `.oh-my-zsh` directory inside of your home directory. To change your plugins and themes you will need to edit your `.zshrc` file, also found in your home dir. Here is a list of all the [themes](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes) and [plugins](https://github.com/ohmyzsh/ohmyzsh/wiki/Plugins) that come bundled with OhMyZsh.
+That's it! You should now see a `.oh-my-zsh` directory inside of your home directory. To change your plugins and themes you will need to edit your `.zshrc` file, also found in your home dir. 
+
+Here is a list of all the [themes](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes) and [plugins](https://github.com/ohmyzsh/ohmyzsh/wiki/Plugins) that come bundled with OhMyZsh.
 
 ### More Plugins
+
+There are countless plugins available, but these are the two I recommend most.
 
 #### [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
 
@@ -355,9 +377,11 @@ plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 
 3. Start a new terminal session.
 
+A huge list of plugins can be found at the [awesome zsh plugins repo](https://github.com/unixorn/awesome-zsh-plugins).
+
 ## 📦 Node.js [^8]
 
-Node.js is a JavaScript runtime environment that executes JavaScript code outside a web browser.
+Node.js is a JavaScript runtime environment that executes JavaScript code outside a web browser. It allows us to install packages, run local web servers, create APIs, and more.
 
 ### NVM
 
@@ -421,17 +445,17 @@ Then verify that you have npm installed as well:
 npm --version
 ```
 
-#### Changing Node Version
+#### Changing Node Versions
 
 Use the following commands to change the version of Node you would like to use for any given project:
 
-To switch to the Current version:
+_Switch to the Current version:_
 
 ```sh
 nvm use node
 ```
 
-To switch to the LTS version:
+_Switch to the LTS version:_
 
 ```sh
 nvm use --lts
@@ -506,7 +530,7 @@ Note:
 
 ## 🍫 Chocolatey [^9]
 
-Chocolatey is a package manager like [homebrew](https://brew.sh/), but for Windows.
+[Chocolatey](https://community.chocolatey.org/) is a command-line package manager like [homebrew](https://brew.sh/) or [APT](https://ubuntu.com/server/docs/package-management), but for Windows.
 
 ### Admin Shell
 
@@ -542,27 +566,49 @@ Use the search bar from the Start menu and type in `powershell`. A link to Run a
 <img src="images/powershell.png" alt="Search powershell from the start menu" width="800px" />
 </p>
 
+#### Option 4
+
+Windows Terminal added a new feature where you can launch a PowerShell/Command Prompt profile in an Admin terminal automatically. In the Windows Terminal settings, scroll down to your desired profile and then toggle the `Run this profile as Administrator` switch. Now you can skip all the steps above, and the terminal will always launch as admin.
+
+<p align="center">
+<img src="images/new-admin.jpg" alt="Automatically launch an admin windows terminal profile" width="800px" />
+</p>
+
 ### Installing Chocolatey
 
 1. Open an administrative PowerShell terminal
 
-2. Run `Get-ExecutionPolicy`.
+2. Run the following command:
 
-3. If it returns `Restricted`, then run `Set-ExecutionPolicy AllSigned` or `Set-ExecutionPolicy Bypass -Scope Process`.
+```ps
+Get-ExecutionPolicy
+```
 
->With PowerShell, you must ensure Get-ExecutionPolicy is not Restricted. We suggest using Bypass to bypass the policy to get things installed or AllSigned for quite a bit more security.
+3. If it returns `Restricted`, then run one of the following commands:
 
-4. Now run the following command:
+```ps
+Set-ExecutionPolicy AllSigned
+```
 
-```sh
+or 
+
+```ps
+Set-ExecutionPolicy Bypass -Scope Process
+```
+
+>With PowerShell, you must ensure `Get-ExecutionPolicy` is not Restricted. We suggest using `Bypass` to bypass the policy to get things installed or `AllSigned` for quite a bit more security.
+
+4. Finally, run the following command:
+
+```ps
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 ```
 
-5. If you don't see any errors, you are ready to use Chocolatey! Type `choco` or `choco -?` now, or see [Getting Started](https://docs.chocolatey.org/en-us/getting-started) for usage instructions.
+If you don't see any errors, you are ready to use Chocolatey! Type `choco` or `choco -?` now, or see [Getting Started](https://docs.chocolatey.org/en-us/getting-started) for usage instructions.
 
 ### Basic Chocolatey Commands
 
-We use the `choco` command to use chocolatey. Just remember, you must use an administrative shell for it to work. Search for available apps on the [Community Package Repository](https://community.chocolatey.org/packages).
+We use the `choco` command to run chocolatey. (_Remember, you must use an administrative shell for it to work._)
 
 Install a new package:
 
@@ -596,6 +642,8 @@ choco upgrade all
 
 ### Windows Apps
 
+Search for available apps on the [Community Package Repository](https://community.chocolatey.org/packages).
+
 Here are a few of my favorite (free) apps for productivity and development on Windows:
 
 - [Wox](http://www.wox.one/) - A full-featured launcher
@@ -611,7 +659,7 @@ Here are a few of my favorite (free) apps for productivity and development on Wi
 
 You can download all these at once with the following command using chocolatey in an admin shell:
 
-```sh
+```ps
 choco install wox runjs responsively zeal figma drawio github-desktop postman notion powertoys -y
 ```
 
@@ -721,21 +769,17 @@ You should be able to view the website locally at http://localhost:3000/.
 
 ## ➕ Extracurriculars
 
-There are many more languages and tools at our disposal. If you are interested in more than JavaScript and web development, check out the following guides for taking your dev environment to the next level.
+There are many more languages and tools at our disposal. If you are interested in more than JavaScript, check out the following guides for taking your dev environment to the next level.
 
 <details>
 
   <summary>🛳 Docker</summary>
-
-</details>
-
-<details>
-
-  <summary>💎 Ruby</summary>
-
-### Ruby
-
-### Rails
+  
+  ### Remote Containers
+  
+  >This step-by-step guide will help you get started developing with remote containers by setting up Docker Desktop for Windows with WSL 2
+  
+  - [Get started with Docker remote containers on WSL 2](https://docs.microsoft.com/en-us/windows/wsl/tutorials/wsl-containers)
 
 </details>
 
@@ -748,30 +792,6 @@ There are many more languages and tools at our disposal. If you are interested i
 >The following is a step-by-step guide to get you started using Python for web development on Windows, using the Windows Subsystem for Linux (WSL).
 
 - [Get started using Python for web development on Windows](https://docs.microsoft.com/en-us/windows/python/web-frameworks)
-
-</details>
-
-<details>
-
-<summary>⚙ Rust</summary>
-
-</details>
-
-<details>
-
-  <summary>🦡 Go</summary>
-
-</details>
-
-<details>
-
-  <summary>® R</summary>
-
-### RStudio Server
-
->RStudio Server enables you to provide a browser based interface to a version of R running on a remote Linux server, bringing the power and productivity of the RStudio IDE to server-based deployments of R.
-
-- [Using RStudio Server in Windows WSL2](https://support.rstudio.com/hc/en-us/articles/360049776974-Using-RStudio-Server-in-Windows-WSL2)
 
 </details>
 
@@ -790,12 +810,6 @@ There are many more languages and tools at our disposal. If you are interested i
 >This post is about setup for PHP 8 web development for Windows. This is mainly for Laravel development.
 
 - [Windows PHP8 Development Setup With WSL2](https://joshpress.net/blog/wsl-debian-php8)
-
-</details>
-
-<details>
-
-  <summary>🥅 .NET</summary>
 
 </details>
 
