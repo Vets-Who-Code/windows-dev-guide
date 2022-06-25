@@ -8,7 +8,7 @@
 
 - [🔭概述](#概述)
 - [☑先决条件](#先决条件)
-- [🐧 WSL](#-WSL)
+- [🐧 WSL](#-wsl-1-2-3)
   - [安装 WSL 2](#安装-wsl-2)
   - [用户配置](#用户配置)
   - [更新 Linux](#更新-linux)
@@ -69,7 +69,7 @@
 - Windows 10 版本 2004 及更高版本（Build 19041 及更高版本）或 Windows 11[（我是哪个版本？）](https://support.microsoft.com/en-us/topic/628bec99-476a-2c13-5296-9dd081cdd808)
 - [GitHub](https://github.com)帐户
 
-## 🐧 WSL
+## 🐧 wsl
 
 设置 Windows 开发环境的第一个也是最重要的部分是安装 WindowsLinux 子系统（WSL）。我建议坚持使用 Ubuntu，但可以随意尝试尽可能多的发行版。一次安装多个发行版没有问题。
 
