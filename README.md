@@ -4,6 +4,8 @@
 
 <h1 align="center">Windows Developer Setup Guide (2022)</h1>
 
+English | [中文](./README_cn.md)
+
 - [🔭 Overview](#-overview)
 - [☑ Prerequisites](#-prerequisites)
 - [🐧 WSL](#-wsl-1-2-3)
@@ -68,7 +70,7 @@ After a lot of trial and error, I've been able to piece together a pretty respec
 - Windows 10 version 2004 and higher (Build 19041 and higher) or Windows 11 [(Which version do I have?)](https://support.microsoft.com/en-us/topic/628bec99-476a-2c13-5296-9dd081cdd808)
 - A [GitHub](https://github.com) account
 
-## 🐧 WSL [^1] [^2] [^3]
+## 🐧 wsl
 
 The first and most important part of setting up your Windows dev environment is installing the Windows Subsystem for Linux (WSL). I recommend sticking with Ubuntu, but feel free to try out as many distributions as you like. There are no issues with having multiple distributions installed at once.
 
