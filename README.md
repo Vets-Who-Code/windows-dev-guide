@@ -8,27 +8,27 @@ English | [中文](./README_cn.md)
 
 - [🔭 Overview](#-overview)
 - [☑ Prerequisites](#-prerequisites)
-- [🐧 WSL](#-wsl-1-2-3)
+- [🐧 WSL](#-wsl)
   - [Installing WSL 2](#installing-wsl-2)
   - [User Config](#user-config)
   - [Updating Linux](#updating-linux)
   - [Mapping Your Linux Drive](#mapping-your-linux-drive)
     - [Pin Your Code Directory](#pin-your-code-directory)
   - [Restarting WSL](#restarting-wsl)
-- [👨‍💻 Windows Terminal](#windows-terminal-4)
+- [👨‍💻 Windows Terminal](#-windows-terminal)
   - [Installing Windows Terminal](#installing-windows-terminal)
   - [Terminal Settings](#terminal-settings)
     - [Default Profile](#default-profile)
     - [Starting Directory](#starting-directory)
-- [📝 Git Config](#-git-config-5)
+- [📝 Git Config](#-git-config)
   - [Name](#name)
   - [Email](#email)
   - [Username](#username)
-- [😺 GitHub Credentials](#-github-credentials-6)
+- [😺 GitHub Credentials](#-github-credentials)
   - [Creating your Personal Access Token](#creating-your-personal-access-token)
   - [Git Credential Manager](#git-credential-manager)
   - [Storing Your Token](#storing-your-token)
-- [💤 Zsh](#-zsh-7)
+- [💤 Zsh](#-zsh)
   - [Installing Zsh](#installing-zsh)
   - [OhMyZsh](#ohmyzsh)
   - [cURL](#curl)
@@ -36,16 +36,16 @@ English | [中文](./README_cn.md)
   - [More Plugins](#more-plugins)
     - [zsh-autosuggestions](#zsh-autosuggestions)
     - [zsh-syntax-highlighting](#zsh-syntax-highlighting)
-- [📦 Node.js](#-nodejs-8)
+- [📦 Node.js](#-nodejs)
   - [NVM](#nvm)
     - [Installing NVM](#installing-nvm)
-    - [Changing Node Version](#changing-node-version)
+    - [Changing Node Versions](#changing-node-versions)
 - [💻 Visual Studio Code](#-visual-studio-code)
   - [Installing VS Code](#installing-vs-code)
   - [Changing the Default Shell](#changing-the-default-shell)
   - [Remote Extension](#remote-extension)
   - [More Extensions](#more-extensions)
-- [🍫 Chocolatey](#-chocolatey-9)
+- [🍫 Chocolatey](#-chocolatey)
   - [Admin Shell](#admin-shell)
     - [Option 1](#option-1)
     - [Option 2](#option-2)
@@ -56,7 +56,11 @@ English | [中文](./README_cn.md)
   - [Windows Apps](#windows-apps)
 - [🪜 Chrome Extensions](#-chrome-extensions)
 - [🇺🇸 VetsWhoCode Web App](#-vetswhocode-web-app)
-- [➕ Extracurriculars](#-extracurriculars)
+- [🐳 Docker](#-docker)
+- [🐍 Python](#-python)
+- [💎 Ruby](#-ruby)
+- [💾 SQL](#-sql)
+- [📚 References](#-references)
 
 ## 🔭 Overview
 
@@ -71,7 +75,7 @@ After a lot of trial and error, I've been able to piece together a pretty respec
 - Windows 10 version 2004 and higher (Build 19041 and higher) or Windows 11 [(Which version do I have?)](https://support.microsoft.com/en-us/topic/628bec99-476a-2c13-5296-9dd081cdd808)
 - A [GitHub](https://github.com) account
 
-## 🐧 WSL [^1] [^2] [^3]
+## 🐧 WSL
 
 The first and most important part of setting up your Windows dev environment is installing the Windows Subsystem for Linux (WSL). I recommend sticking with Ubuntu, but feel free to try out as many distributions as you like. There are no issues with having multiple distributions installed at once.
 
@@ -172,7 +176,7 @@ wsl.exe
 
 If you go back to your Linux shell everything should be back to normal.
 
-## 👨‍💻 Windows Terminal [^4]
+## 👨‍💻 Windows Terminal
 
 To launch a Linux terminal we currently need to use the Ubuntu icon from the Start menu or enter the `wsl` or `bash` commands into PowerShell/Command Prompt. Another option that will give us more features like tabs, split views, themes, transparency, and key bindings, is to use the Windows Terminal. There are also a few other terminals like [Cmder](https://cmder.net/), [ConEmu](https://conemu.github.io/), or [Hyper](https://hyper.is/), but in my experience, Windows Terminal works extremely well.
 
@@ -218,7 +222,7 @@ There are many more settings to explore, and there is also a JSON file you can e
 
 Check out [this guide](https://www.ubuntupit.com/best-windows-terminal-themes-and-color-schemes/) for some popular Windows Terminal themes and how to install them.
 
-## 📝 Git Config [^5]
+## 📝 Git Config
 
 Git should come pre-installed on most, if not all of the WSL Linux distributions. To ensure you have the latest version, use the following command in an Ubuntu or Debian based distro:
 
@@ -254,7 +258,7 @@ Make sure you are inputting `user.username` and not `user.name` otherwise you wi
 
 You can double-check any of your settings by typing `git config --global user.name` and so on. To make any changes just type the necessary command again as in the examples above.
 
-## 😺 GitHub Credentials [^6]
+## 😺 GitHub Credentials
 
 ### Creating your Personal Access Token
 
@@ -289,7 +293,7 @@ Note:
 If you ever receive the following error message:
 
 ```sh
-/mnt/c/Program\ Files/Git/mingw64/libexec/git-core/git-credential-manager-core.exe store: 1: 
+/mnt/c/Program\ Files/Git/mingw64/libexec/git-core/git-credential-manager-core.exe store: 1:
 /mnt/c/Program Files/Git/mingw64/libexec/git-core/git-credential-manager-core.exe: not found
 ```
 
@@ -299,7 +303,7 @@ Try using the this command:
 git config --global credential.helper store
 ```
 
-## 💤 Zsh [^7]
+## 💤 Zsh
 
  Z shell works almost identically to the standard BASH shell found on default Linux installs. What makes it different is its support for plugins and themes, along with some extra features like spelling correction and recursive path expansion. It's time to throw BASH in the trash!
 
@@ -333,7 +337,7 @@ Enter the following command into your terminal to install OhMyZsh:
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
-That's it! You should now see a `.oh-my-zsh` directory inside of your home directory. To change your plugins and themes you will need to edit your `.zshrc` file, also found in your home dir. 
+That's it! You should now see a `.oh-my-zsh` directory inside of your home directory. To change your plugins and themes you will need to edit your `.zshrc` file, also found in your home dir.
 
 Here is a list of all the [themes](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes) and [plugins](https://github.com/ohmyzsh/ohmyzsh/wiki/Plugins) that come bundled with OhMyZsh.
 
@@ -379,7 +383,7 @@ plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 
 A huge list of plugins can be found at the [awesome zsh plugins repo](https://github.com/unixorn/awesome-zsh-plugins).
 
-## 📦 Node.js [^8]
+## 📦 Node.js
 
 Node.js is a JavaScript runtime environment that executes JavaScript code outside a web browser. It allows us to install packages, run local web servers, create APIs, and more.
 
@@ -464,7 +468,7 @@ nvm use --lts
 You can also use the specific number for any additional versions you've installed:
 
 ```sh
-nvm use v8.2.1.
+nvm use v8.2.1
 ```
 
 To list all of the versions of Node.js available, use the command: `nvm ls-remote`.
@@ -528,7 +532,7 @@ The number of extensions available for VS Code can be overwhelming, here are som
 Note:
 >You will need to install any VS Code extensions for your Remote - WSL. Extensions already installed locally on VS Code will not automatically be available. [Learn more](https://code.visualstudio.com/docs/remote/wsl#_managing-extensions).
 
-## 🍫 Chocolatey [^9]
+## 🍫 Chocolatey
 
 [Chocolatey](https://community.chocolatey.org/) is a command-line package manager like [homebrew](https://brew.sh/) or [APT](https://ubuntu.com/server/docs/package-management), but for Windows.
 
@@ -590,7 +594,7 @@ Get-ExecutionPolicy
 Set-ExecutionPolicy AllSigned
 ```
 
-or 
+or
 
 ```ps
 Set-ExecutionPolicy Bypass -Scope Process
@@ -761,76 +765,28 @@ npm run dev
 <img src="images/run.jpg" alt="Run the vwc app locally" width="800px" />
 </p>
 
-You should be able to view the website locally at http://localhost:3000/.
+You should be able to view the website locally at [http://localhost:3000/](http://localhost:3000/)].
 
 `CTRL` + `Left-Click` on the localhost link in your terminal to launch the app in your browser.
 
 `CTRL` + `C` to close the dev server when you are finished.
 
-## ➕ Extracurriculars
+## 🐳 Docker
 
-There are many more languages and tools at our disposal. If you are interested in more than JavaScript, check out the following guides for taking your dev environment to the next level.
+## 🐍 Python
 
-<details>
+## 💎 Ruby
 
-  <summary>🛳 Docker</summary>
-  
-  ### Remote Containers
-  
-  >This step-by-step guide will help you get started developing with remote containers by setting up Docker Desktop for Windows with WSL 2
-  
-  - [Get started with Docker remote containers on WSL 2](https://docs.microsoft.com/en-us/windows/wsl/tutorials/wsl-containers)
+## 💾 SQL
 
-</details>
+## 📚 References
 
-<details>
-
-  <summary>🐍 Python</summary>
-
-### Python Development on Windows
-
->The following is a step-by-step guide to get you started using Python for web development on Windows, using the Windows Subsystem for Linux (WSL).
-
-- [Get started using Python for web development on Windows](https://docs.microsoft.com/en-us/windows/python/web-frameworks)
-
-</details>
-
-<details>
-
-  <summary>🅿 PHP</summary>
-
-### PHP7 LAMP Stack
-
->Install Apache, MySQL and PHP In order to create the basic structure of the LAMP stack (Linux, Apache, MySQL, PHP).
-
-- [Install and configure a fully functional web server on WSL 2](https://needlify.com/post/install-and-configure-a-fully-functionnal-web-server-on-wsl-2-b1aa0954)
-
-### PHP8
-
->This post is about setup for PHP 8 web development for Windows. This is mainly for Laravel development.
-
-- [Windows PHP8 Development Setup With WSL2](https://joshpress.net/blog/wsl-debian-php8)
-
-</details>
-
-<details>
-
-  <summary>💾 Databases</summary>
-
-### Installing a Database
-
->This step-by-step guide will help you get started connecting your project in WSL to a database. Get started with MySQL, PostgreSQL, MongoDB, Redis, Microsoft SQL Server, or SQLite.
-
-- [Get started with databases on Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/tutorials/wsl-database)
-
-</details>
-
-[^1]: [Set up a WSL development environment](https://docs.microsoft.com/en-us/windows/wsl/setup/environment)
-[^2]: [Microsoft WSL Install Guide](https://docs.microsoft.com/en-us/windows/wsl/install)
-[^3]: [WSL2 Install Guide](https://www.sitepoint.com/wsl2/)
-[^4]: [Install and get started setting up Windows Terminal](https://docs.microsoft.com/en-us/windows/terminal/install)
-[^5]: [Git a Grip](https://dev.to/stephanlamoureux/series/11364)
-[^6]: [Git Credential Manager](https://github.com/GitCredentialManager/git-credential-manager)
-[^7]: [Using Zsh in WSL](http://kevinprogramming.com/using-zsh-in-windows-terminal/)
-[^8]: [Installing Node on WSL](https://docs.microsoft.com/en-us/windows/dev-environment/javascript/nodejs-on-wsl)
-[^9]: [Chocolatey Install Docs](https://chocolatey.org/install)
+- [Set up a WSL development environment](https://docs.microsoft.com/en-us/windows/wsl/setup/environment)
+- [Microsoft WSL Install Guide](https://docs.microsoft.com/en-us/windows/wsl/install)
+- [WSL2 Install Guide](https://www.sitepoint.com/wsl2/)
+- [Install and get started setting up Windows Terminal](https://docs.microsoft.com/en-us/windows/terminal/install)
+- [Git a Grip](https://dev.to/stephanlamoureux/series/11364)
+- [Git Credential Manager](https://github.com/GitCredentialManager/git-credential-manager)
+- [Using Zsh in WSL](http://kevinprogramming.com/using-zsh-in-windows-terminal/)
+- [Installing Node on WSL](https://docs.microsoft.com/en-us/windows/dev-environment/javascript/nodejs-on-wsl)
+- [Chocolatey Install Docs](https://chocolatey.org/install)
