@@ -400,14 +400,18 @@ Node.js is a JavaScript runtime environment that executes JavaScript code outsid
 
 ### NVM
 
-You will likely need to switch between multiple versions of Node.js based on the needs of different projects you're working on. Node Version Manager allows you to quickly install and use different versions of node via the command line.
+You will likely need to switch between multiple versions of Node.js based on the needs of different projects you're working on. Node Version Manager allows you to quickly install and use different versions of Node via the command-line.
 
 #### Installing NVM
 
-1. Open your Ubuntu command line and Install nvm with:
+1. Open your terminal and install NVM with `curl` or `wget`:
 
 ```sh
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+```
+
+```sh
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 ```
 
 To verify installation, enter: `command -v nvm`. This should return 'nvm', if you receive 'command not found' or no response at all, close your current terminal, reopen it, and try again.
@@ -616,7 +620,7 @@ Two more symbols we can use are `^` and `~`.
 For example, `npm install ^8.1.1` specification might install version `8.3.1` if that's the latest minor version.
 
 `~` is the latest patch release.
-In the same way as minor releases, `npm install ~8.1.1` could install version `8.1.6` if that's the latest minor version available.
+In the same way as minor releases, `npm install ~8.1.1` could install version `8.1.6` if that's the latest patch version available.
 
 When using the `npm install` or `npm i` command, the latest minor version will be used.
 
@@ -644,7 +648,7 @@ npm run format
 
 The keys in the scripts object are the command names and the values are the actual commands.
 
-_Check out the official [npm](https://docs.npmjs.com/) and [Node.js](https://nodejs.org/en/docs/) docs for more in-depth guides._
+_Check out the official [NPM](https://docs.npmjs.com/), [NVM](https://github.com/nvm-sh/nvm), and [Node.js](https://nodejs.org/en/docs/) docs for more in-depth guides._
 
 ## 💻 Visual Studio Code
 
