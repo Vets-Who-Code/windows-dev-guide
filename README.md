@@ -954,6 +954,67 @@ You should be able to view the website locally at [http://localhost:3000/](http:
 
 ## 💎 Ruby
 
+In this section, we'll install Ruby using rbenv. Using rbenv will also allow you to install multiple Ruby environments on your machine, using different versions.
+
+1. Install rbenv
+
+```
+sudo apt install rbenv
+```
+
+2. Follow instructions to load rbenv in the shell:
+
+```
+rbenv init
+```
+
+3. Before installing Ruby, you'll want to ensure your build environment contains required tools and libraries:
+
+```
+sudo apt-get install autoconf bison patch build-essential rustc libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libgmp-dev libncurses5-dev libffi-dev libgdbm6 libgdbm-dev libdb-dev uuid-dev
+```
+
+Next, install **ruby-build** as an rbenv plugin, to make sure we don't have any problems with rbenv.
+
+```
+git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build
+```
+
+4. Let's get Ruby installed:
+
+Run this command to see which stable versions of Ruby are available:
+
+```
+rbenv install -l
+```
+
+Install the most recent stable version, which in this case is v3.1.2:
+
+```
+rbenv install 3.1.2
+```
+
+Ruby will be installed in your **~/.rbenv** directory.
+
+5.  Set the global version, so that when you open a new terminal, it will use this version of Ruby.
+
+```
+rbenv global 3.1.2
+```
+
+6. Close your terminal and open a new session. Check your current version of ruby:
+
+```
+ruby -v
+```
+
+You should see something like this:
+
+```
+ruby 3.1.2p20 (2022-04-12 revision 4491bb740a) [x86_64-linux]
+```
+
+
 ## 💾 SQL
 
 ## 📚 References
