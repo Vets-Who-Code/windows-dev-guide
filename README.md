@@ -952,7 +952,7 @@ You should be able to view the website locally at [http://localhost:3000/](http:
 
 ## 🐍 Python
 
-## 💎 Ruby
+## 💎 Ruby and Rails
 
 In this section, we'll install Ruby using rbenv. Using rbenv will also allow you to install multiple Ruby environments on your machine, using different versions.
 
@@ -1014,6 +1014,35 @@ You should see something like this:
 ruby 3.1.2p20 (2022-04-12 revision 4491bb740a) [x86_64-linux]
 ```
 
+7. Now that Ruby is installed, you can install Rails. Ruby has its own built-in package manager, called RubyGems. This is what you'll use to install Rails.
+
+Enter the following to install Rails v7.0.4:
+
+```
+gem install rails -v 7.0.4 --no-document
+```
+
+* *The **--no-document** flag speeds up the installation by skipping the gem documentation files*
+
+8. Next you'll need to install a shim to associate the *rails* command with rbenv:
+
+```
+rbenv rehash
+```
+
+* *This command should run automatically after gems are installed*
+
+9. Close your terminal and open a new session. Verify Rails was successfully installed:
+
+```
+rails -v
+```
+
+You should see this in your terminal:
+
+```
+Rails 7.0.4
+```
 
 ## 💾 SQL
 
