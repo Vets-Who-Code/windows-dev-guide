@@ -70,6 +70,7 @@ English | [中文](./README_cn.md)
 - [🐳 Docker](#-docker)
 - [🐍 Python](#-python)
 - [💎 Ruby](#-ruby)
+  - [Rails](#rails)
 - [💾 SQL](#-sql)
 - [📚 References](#-references)
 
@@ -952,31 +953,31 @@ You should be able to view the website locally at [http://localhost:3000/](http:
 
 ## 🐍 Python
 
-## 💎 Ruby and Rails
+## 💎 Ruby
 
-In this section, we'll install Ruby using rbenv. Using rbenv will also allow you to install multiple Ruby environments on your machine, using different versions.
+In this section, we'll install Ruby using `rbenv`. Using rbenv will also allow you to install multiple Ruby environments on your machine, using different versions.
 
 1. Install rbenv
 
-```
+```sh
 sudo apt install rbenv
 ```
 
 2. Follow instructions to load rbenv in the shell:
 
-```
+```sh
 rbenv init
 ```
 
-3. Before installing Ruby, you'll want to ensure your build environment contains required tools and libraries:
+3. Before installing Ruby, you'll want to ensure your build environment contains the required tools and libraries:
 
-```
+```sh
 sudo apt-get install autoconf bison patch build-essential rustc libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libgmp-dev libncurses5-dev libffi-dev libgdbm6 libgdbm-dev libdb-dev uuid-dev
 ```
 
-Next, install **ruby-build** as an rbenv plugin, to make sure we don't have any problems with rbenv.
+Next, install `ruby-build` as an rbenv plugin, to make sure we don't have any problems with rbenv.
 
-```
+```sh
 git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build
 ```
 
@@ -984,63 +985,64 @@ git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-b
 
 Run this command to see which stable versions of Ruby are available:
 
-```
+```sh
 rbenv install -l
 ```
 
 Install the most recent stable version, which in this case is v3.1.2:
 
-```
+```sh
 rbenv install 3.1.2
 ```
 
-Ruby will be installed in your **~/.rbenv** directory.
+Ruby will be installed in your `~/.rbenv` directory.
 
-5.  Set the global version, so that when you open a new terminal, it will use this version of Ruby.
+5. Set the global version, so that when you open a new terminal, it will use this version of Ruby.
 
-```
+```sh
 rbenv global 3.1.2
 ```
 
 6. Close your terminal and open a new session. Check your current version of ruby:
 
-```
+```sh
 ruby -v
 ```
 
 You should see something like this:
 
-```
+```sh
 ruby 3.1.2p20 (2022-04-12 revision 4491bb740a) [x86_64-linux]
 ```
 
-7. Now that Ruby is installed, you can install Rails. Ruby has its own built-in package manager, called RubyGems. This is what you'll use to install Rails.
+### Rails
+
+Now that Ruby is installed, you can install Rails. Ruby has its own built-in package manager, called RubyGems. This is what you'll use to install Rails.
 
 Enter the following to install Rails v7.0.4:
+_The `--no-document` flag speeds up the installation by skipping the gem documentation files._
 
-```
+```sh
 gem install rails -v 7.0.4 --no-document
 ```
 
-* *The **--no-document** flag speeds up the installation by skipping the gem documentation files*
+1. Next you'll need to install a shim to associate the `rails` command with `rbenv`:
 
-8. Next you'll need to install a shim to associate the *rails* command with rbenv:
-
-```
+```sh
 rbenv rehash
 ```
 
-* *This command should run automatically after gems are installed*
+This command should run automatically after gems are installed
 
-9. Close your terminal and open a new session. Verify Rails was successfully installed:
+2. Close your terminal and open a new session. Verify Rails was successfully installed:
 
-```
+```sh
 rails -v
 ```
 
 You should see this in your terminal:
 
-```
+```sh
 Rails 7.0.4
 ```
 
