@@ -969,19 +969,21 @@ sudo apt install rbenv
 rbenv init
 ```
 
-3. Before installing Ruby, you'll want to ensure your build environment contains the required tools and libraries:
+3. Restart your terminal to update the shell.
+
+4. Before installing Ruby, you'll want to ensure your build environment contains the required tools and libraries:
 
 ```sh
 sudo apt-get install autoconf bison patch build-essential rustc libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libgmp-dev libncurses5-dev libffi-dev libgdbm6 libgdbm-dev libdb-dev uuid-dev
 ```
 
-Next, install `ruby-build` as an rbenv plugin, to make sure we don't have any problems with rbenv.
+5. Next, install `ruby-build` as an rbenv plugin, to make sure we don't have any problems with rbenv.
 
 ```sh
 git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build
 ```
 
-4. Let's get Ruby installed:
+6. Let's get Ruby installed:
 
 Run this command to see which stable versions of Ruby are available:
 
@@ -995,15 +997,15 @@ Install the most recent stable version, which in this case is v3.1.2:
 rbenv install 3.1.2
 ```
 
-Ruby will be installed in your `~/.rbenv` directory.
+*Ruby will be installed in your `~/.rbenv` directory.*
 
-5. Set the global version, so that when you open a new terminal, it will use this version of Ruby.
+7. Set the global version, so that when you open a new terminal, it will use this version of Ruby.
 
 ```sh
 rbenv global 3.1.2
 ```
 
-6. Close your terminal and open a new session. Check your current version of ruby:
+8. Close your terminal and open a new session. Check your current version of ruby:
 
 ```sh
 ruby -v
