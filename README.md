@@ -994,8 +994,10 @@ rbenv install -l
 Install the most recent stable version, which in this case is v3.1.2:
 
 ```sh
-rbenv install 3.1.2
+rbenv install --verbose 3.1.2
 ```
+
+This can take a _very_ long time. The `--verbose` flag will show the install progress, otherwise it will look like it's frozen.
 
 *Ruby will be installed in your `~/.rbenv` directory.*
 
