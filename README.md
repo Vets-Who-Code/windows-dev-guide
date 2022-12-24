@@ -957,6 +957,8 @@ You should be able to view the website locally at [http://localhost:3000/](http:
 
 In this section, we'll install Ruby using `rbenv`. Using rbenv will also allow you to install multiple Ruby environments on your machine, using different versions.
 
+*This guide continues installation with zsh as the default shell.*
+
 1. Install rbenv
 
 ```sh
@@ -967,6 +969,13 @@ sudo apt install rbenv
 
 ```sh
 rbenv init
+```
+
+The output will prompt you with instructions for loading rbenv. In your **.zshrc**, add the following line:
+
+```sh
+# Loading rbenv automatically
+eval "$(rbenv init -)"
 ```
 
 3. Restart your terminal to update the shell.
