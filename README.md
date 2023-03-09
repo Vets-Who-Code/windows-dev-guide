@@ -67,11 +67,18 @@ English | [中文](./README_cn.md)
   - [Windows Apps](#windows-apps)
 - [🪜 Chrome Extensions](#-chrome-extensions)
 - [🇺🇸 VetsWhoCode Web App](#-vetswhocode-web-app)
-- [🐳 Docker](#-docker)
 - [🐍 Python](#-python)
+  - [pip](#pip)
+  - [venv](#venv)
+  - [Flask](#flask)
+  - [Django](#django)
+  - [JupyterLab](#jupyterlab)
+    - [Notebook](#notebook)
+    - [Voilà](#voilà)
+  - [VS Code Extensions](#vs-code-extensions)
+  - [PyCharm](#pycharm)
 - [💎 Ruby](#-ruby)
   - [Rails](#rails)
-- [💾 SQL](#-sql)
 - [📚 References](#-references)
 
 ## 🔭 Overview
@@ -949,15 +956,103 @@ You should be able to view the website locally at [http://localhost:3000/](http:
 
 `CTRL` + `C` to close the dev server when you are finished.
 
-## 🐳 Docker
-
 ## 🐍 Python
+
+This section covers setting up a Python development environment in WSL. At the end you will have a package manager, environment manager, some frameworks, extensions, and more.
+
+The first step will be confirming that Python is already installed on your system:
+
+```sh
+python3 --version
+```
+
+A Python version number should be returned. If not, install it by using:
+
+```sh
+sudo apt install python3
+```
+
+### pip
+
+pip is the package manager for Python, similar to npm for JavaScript. Install it using the following:
+
+```sh
+sudo apt install python3-pip
+```
+
+### venv
+
+venv allows you to create virtual environments for your Python projects so you do not run into versioning conflicts.
+
+```sh
+sudo apt install python3-venv
+```
+
+### Flask
+
+Flask is a web development framework similar to Express for Node.js. It can be installed by using pip:
+
+```sh
+pip3 install flask
+```
+
+### Django
+
+Another popular web development framework is Django. Just as before, install it using pip:
+
+```sh
+pip3 install django
+```
+
+### JupyterLab
+
+JupyterLab is a web-based interactive development environment. It is a powerful tool used in data science, scientific computing, computational journalism, and machine learning. Install it using the following command:
+
+```sh
+pip3 install jupyterlab
+```
+
+JupyterLab can be launched using the `jupyter-lab` command.
+
+#### Notebook
+
+The next step is to install the Jupyter Notebook. It allows you to create and share documents from Jupyter.
+
+```sh
+pip3 install notebook
+```
+
+The notebook can be run by using the `jupyter notebook` command.
+
+#### Voilà
+
+Voilà allows you to convert a Jupyter Notebook into an interactive dashboard that allows you to share your work with others.
+
+```sh
+pip3 install voila
+```
+
+Launch Voilà using the `voila` command.
+
+### VS Code Extensions
+
+There are many great Python extensions for VS Code, but here are a few popular ones:
+
+- [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python) - The official Python extension.
+- [Django](https://marketplace.visualstudio.com/items?itemName=batisteo.vscode-django) - Syntax highlighting and snippets for Django.
+- [Python Indent](https://marketplace.visualstudio.com/items?itemName=KevinRose.vsc-python-indent) - Correct Python indentation.
+- [Python Environment Manager](https://marketplace.visualstudio.com/items?itemName=donjayamanne.python-environment-manager) - Manage all of your Python environments & packages.
+- [autoDocstring](https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring) - Quickly generate docstrings for python functions.
+
+### PyCharm
+
+Instead of using VS Code, another option is to use a full-fledged IDE made specifically for Python development. JetBrains created one of the best and widely used ones called PyCharm. There is free community edition version that can be downloaded [here](https://www.jetbrains.com/pycharm/).
 
 ## 💎 Ruby
 
 In this section, we'll install Ruby using `rbenv`. Using rbenv will also allow you to install multiple Ruby environments on your machine, using different versions.
 
-*This guide continues installation with zsh as the default shell.*
+_This guide continues installation with zsh as the default shell._
 
 1. Install rbenv
 
@@ -1008,7 +1103,7 @@ rbenv install --verbose 3.1.2
 
 This can take a _very_ long time. The `--verbose` flag will show the install progress, otherwise it will look like it's frozen.
 
-*Ruby will be installed in your `~/.rbenv` directory.*
+_Ruby will be installed in your `~/.rbenv` directory._
 
 7. Set the global version, so that when you open a new terminal, it will use this version of Ruby.
 
@@ -1058,8 +1153,6 @@ You should see this in your terminal:
 ```sh
 Rails 7.0.4
 ```
-
-## 💾 SQL
 
 ## 📚 References
 
