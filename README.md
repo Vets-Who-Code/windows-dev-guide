@@ -958,7 +958,7 @@ You should be able to view the website locally at [http://localhost:3000/](http:
 
 ## 🐍 Python
 
-This section covers setting up a Python development environment in WSL. At the end you will have a package manager, environment manager, some frameworks, extensions, and more.
+This section covers setting up a Python development environment in WSL. In the end, you will have a package manager, environment manager, some frameworks, extensions, and more.
 
 The first step will be confirming that Python is already installed on your system:
 
@@ -966,7 +966,7 @@ The first step will be confirming that Python is already installed on your syste
 python3 --version
 ```
 
-A Python version number should be returned. If not, install it by using:
+A Python version number should be returned. If not, install it with:
 
 ```sh
 sudo apt install python3
@@ -982,7 +982,7 @@ sudo apt install python3-pip
 
 ### venv
 
-venv allows you to create virtual environments for your Python projects so you do not run into versioning conflicts.
+venv allows you to create virtual environments for your Python projects, helping to prevent versioning conflicts.
 
 ```sh
 sudo apt install python3-venv
@@ -1022,7 +1022,7 @@ The next step is to install the Jupyter Notebook. It allows you to create and sh
 pip3 install notebook
 ```
 
-The notebook can be run by using the `jupyter notebook` command.
+The notebook is run by using the `jupyter notebook` command.
 
 #### Voilà
 
@@ -1036,7 +1036,7 @@ Launch Voilà using the `voila` command.
 
 ### VS Code Extensions
 
-There are many great Python extensions for VS Code, but here are a few popular ones:
+You will find a ton of Python extensions for VS Code, but here are a few of the more popular ones:
 
 - [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python) - The official Python extension.
 - [Django](https://marketplace.visualstudio.com/items?itemName=batisteo.vscode-django) - Syntax highlighting and snippets for Django.
@@ -1046,7 +1046,7 @@ There are many great Python extensions for VS Code, but here are a few popular o
 
 ### PyCharm
 
-Instead of using VS Code, another option is to use a full-fledged IDE made specifically for Python development. JetBrains created one of the best and widely used ones called PyCharm. There is free community edition version that can be downloaded [here](https://www.jetbrains.com/pycharm/).
+Instead of using VS Code, another option is to use an IDE made specifically for Python development. JetBrains created one of the best and most widely used ones called PyCharm. There is a free community edition version that can be downloaded [here](https://www.jetbrains.com/pycharm/).
 
 ## 💎 Ruby
 
