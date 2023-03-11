@@ -75,11 +75,11 @@ English | [中文](./README_cn.md)
 	- [JupyterLab](#jupyterlab)
 		- [Notebook](#notebook)
 		- [Voilà](#voilà)
-	- [VS Code Extensions](#vs-code-extensions)
+	- [Python VS Code Extensions](#python-vs-code-extensions)
 	- [PyCharm](#pycharm)
 - [💎 Ruby](#-ruby)
 	- [Rails](#rails)
-	- [Ruby VSCode Extensions](#ruby-vscode-extensions)
+	- [Ruby VS Code Extensions](#ruby-vs-code-extensions)
 - [📚 References](#-references)
 
 ## 🔭 Overview
