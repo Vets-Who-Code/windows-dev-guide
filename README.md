@@ -9,76 +9,77 @@ English | [中文](./README_cn.md)
 - [🔭 Overview](#-overview)
 - [☑ Prerequisites](#-prerequisites)
 - [🐧 WSL](#-wsl)
-  - [Installing WSL 2](#installing-wsl-2)
-  - [User Config](#user-config)
-  - [Updating Linux](#updating-linux)
-  - [Mapping Your Linux Drive](#mapping-your-linux-drive)
-    - [Pin Your Code Directory](#pin-your-code-directory)
-  - [Restarting WSL](#restarting-wsl)
+	- [Installing WSL 2](#installing-wsl-2)
+	- [User Config](#user-config)
+	- [Updating Linux](#updating-linux)
+	- [Mapping Your Linux Drive](#mapping-your-linux-drive)
+		- [Pin Your Code Directory](#pin-your-code-directory)
+	- [Restarting WSL](#restarting-wsl)
 - [👨‍💻 Windows Terminal](#-windows-terminal)
-  - [Installing Windows Terminal](#installing-windows-terminal)
-  - [Terminal Settings](#terminal-settings)
-    - [Default Profile](#default-profile)
-    - [Starting Directory](#starting-directory)
+	- [Installing Windows Terminal](#installing-windows-terminal)
+	- [Terminal Settings](#terminal-settings)
+		- [Default Profile](#default-profile)
+		- [Starting Directory](#starting-directory)
 - [📝 Git Config](#-git-config)
-  - [Name](#name)
-  - [Email](#email)
-  - [Username](#username)
+	- [Name](#name)
+	- [Email](#email)
+	- [Username](#username)
 - [😺 GitHub Credentials](#-github-credentials)
-  - [Creating your Personal Access Token](#creating-your-personal-access-token)
-  - [Git Credential Manager](#git-credential-manager)
-  - [Storing Your Token](#storing-your-token)
+	- [Creating your Personal Access Token](#creating-your-personal-access-token)
+	- [Git Credential Manager](#git-credential-manager)
+	- [Storing Your Token](#storing-your-token)
 - [💤 Zsh](#-zsh)
-  - [Installing Zsh](#installing-zsh)
-  - [OhMyZsh](#ohmyzsh)
-  - [cURL](#curl)
-  - [Installing OhMyZsh](#installing-ohmyzsh)
-  - [More Plugins](#more-plugins)
-    - [zsh-autosuggestions](#zsh-autosuggestions)
-    - [zsh-syntax-highlighting](#zsh-syntax-highlighting)
+	- [Installing Zsh](#installing-zsh)
+	- [OhMyZsh](#ohmyzsh)
+	- [cURL](#curl)
+	- [Installing OhMyZsh](#installing-ohmyzsh)
+	- [More Plugins](#more-plugins)
+		- [zsh-autosuggestions](#zsh-autosuggestions)
+		- [zsh-syntax-highlighting](#zsh-syntax-highlighting)
 - [📦 Node.js](#-nodejs)
-  - [NVM](#nvm)
-    - [Installing NVM](#installing-nvm)
-    - [Changing Node Versions](#changing-node-versions)
-  - [NPM](#npm)
-    - [New Projects](#new-projects)
-    - [package.json](#packagejson)
-    - [Installing Modules](#installing-modules)
-    - [Dependencies](#dependencies)
-    - [Developer Dependencies](#developer-dependencies)
-    - [Batch Installing](#batch-installing)
-    - [Uninstalling](#uninstalling)
-    - [Versioning](#versioning)
-    - [package-lock.json](#package-lockjson)
-    - [Scripts](#scripts)
+	- [NVM](#nvm)
+		- [Installing NVM](#installing-nvm)
+		- [Changing Node Versions](#changing-node-versions)
+	- [NPM](#npm)
+		- [New Projects](#new-projects)
+		- [package.json](#packagejson)
+		- [Installing Modules](#installing-modules)
+		- [Dependencies](#dependencies)
+		- [Developer Dependencies](#developer-dependencies)
+		- [Batch Installing](#batch-installing)
+		- [Uninstalling](#uninstalling)
+		- [Versioning](#versioning)
+		- [package-lock.json](#package-lockjson)
+		- [Scripts](#scripts)
 - [💻 Visual Studio Code](#-visual-studio-code)
-  - [Installing VS Code](#installing-vs-code)
-  - [Changing the Default Shell](#changing-the-default-shell)
-  - [Remote Extension](#remote-extension)
-  - [More Extensions](#more-extensions)
+	- [Installing VS Code](#installing-vs-code)
+	- [Changing the Default Shell](#changing-the-default-shell)
+	- [Remote Extension](#remote-extension)
+	- [More Extensions](#more-extensions)
 - [🍫 Chocolatey](#-chocolatey)
-  - [Admin Shell](#admin-shell)
-    - [Option 1](#option-1)
-    - [Option 2](#option-2)
-    - [Option 3](#option-3)
-    - [Option 4](#option-4)
-  - [Installing Chocolatey](#installing-chocolatey)
-  - [Basic Chocolatey Commands](#basic-chocolatey-commands)
-  - [Windows Apps](#windows-apps)
+	- [Admin Shell](#admin-shell)
+		- [Option 1](#option-1)
+		- [Option 2](#option-2)
+		- [Option 3](#option-3)
+		- [Option 4](#option-4)
+	- [Installing Chocolatey](#installing-chocolatey)
+	- [Basic Chocolatey Commands](#basic-chocolatey-commands)
+	- [Windows Apps](#windows-apps)
 - [🪜 Chrome Extensions](#-chrome-extensions)
 - [🇺🇸 VetsWhoCode Web App](#-vetswhocode-web-app)
 - [🐍 Python](#-python)
-  - [pip](#pip)
-  - [venv](#venv)
-  - [Flask](#flask)
-  - [Django](#django)
-  - [JupyterLab](#jupyterlab)
-    - [Notebook](#notebook)
-    - [Voilà](#voilà)
-  - [VS Code Extensions](#vs-code-extensions)
-  - [PyCharm](#pycharm)
+	- [pip](#pip)
+	- [venv](#venv)
+	- [Flask](#flask)
+	- [Django](#django)
+	- [JupyterLab](#jupyterlab)
+		- [Notebook](#notebook)
+		- [Voilà](#voilà)
+	- [VS Code Extensions](#vs-code-extensions)
+	- [PyCharm](#pycharm)
 - [💎 Ruby](#-ruby)
-  - [Rails](#rails)
+	- [Rails](#rails)
+	- [Ruby VSCode Extensions](#ruby-vscode-extensions)
 - [📚 References](#-references)
 
 ## 🔭 Overview
@@ -1034,7 +1035,7 @@ pip3 install voila
 
 Launch Voilà using the `voila` command.
 
-### VS Code Extensions
+### Python VS Code Extensions
 
 You will find a ton of Python extensions for VS Code, but here are a few of the more popular ones:
 
@@ -1044,6 +1045,8 @@ You will find a ton of Python extensions for VS Code, but here are a few of the 
 - [Python Environment Manager](https://marketplace.visualstudio.com/items?itemName=donjayamanne.python-environment-manager) - Manage all of your Python environments & packages.
 - [autoDocstring](https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring) - Quickly generate docstrings for python functions.
 - [Black Formatter](https://marketplace.visualstudio.com/items?itemName=ms-python.black-formatter) - Code formatter for Python using Black
+- [AREPL](https://marketplace.visualstudio.com/items?itemName=almenon.arepl) - Automatically evaluates python code in real-time as you type.
+- [Python Test Explorer](https://marketplace.visualstudio.com/items?itemName=LittleFoxTeam.vscode-python-test-adapter) - Run your Python tests in the Sidebar of Visual Studio Code.
 
 ### PyCharm
 
@@ -1154,6 +1157,13 @@ You should see this in your terminal:
 ```sh
 Rails 7.0.4
 ```
+
+### Ruby VS Code Extensions
+
+- [Ruby](https://marketplace.visualstudio.com/items?itemName=rebornix.Ruby) - Official VS Code Ruby extension.
+- [VSCode Ruby](https://marketplace.visualstudio.com/items?itemName=wingrunr21.vscode-ruby) - Syntax highlighting, snippet, and language configuration support for Ruby.
+- [Ruby Test Explorer](https://marketplace.visualstudio.com/items?itemName=connorshea.vscode-ruby-test-adapter) - Run your Ruby tests in the Sidebar of Visual Studio Code.
+- [Ruby on Rails](https://marketplace.visualstudio.com/items?itemName=hridoy.rails-snippets) - Snippets for Ruby on Rails.
 
 ## 📚 References
 
