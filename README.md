@@ -1164,7 +1164,7 @@ Rails 7.0.4
 - [VSCode Ruby](https://marketplace.visualstudio.com/items?itemName=wingrunr21.vscode-ruby) - Syntax highlighting, snippet, and language configuration support for Ruby.
 - [Ruby Test Explorer](https://marketplace.visualstudio.com/items?itemName=connorshea.vscode-ruby-test-adapter) - Run your Ruby tests in the Sidebar of Visual Studio Code.
 - [Rails](https://marketplace.visualstudio.com/items?itemName=bung87.rails) - Ruby on Rails support for Visual Studio Code.
-- [Ruby Solargraph](https://marketplace.visualstudio.com/items?itemName=castwide.solargraph) - Solargraph is a Ruby gem that provides intellisense features through Microsoft's language server protocol.
+- [Ruby Solargraph](https://marketplace.visualstudio.com/items?itemName=castwide.solargraph) - A Ruby gem that provides intellisense features through Microsoft's language server protocol.
 - [Ruby LSP](https://marketplace.visualstudio.com/items?itemName=Shopify.ruby-lsp) - Companion VS Code extension for the Ruby LSP gem.
 
 ## 📚 References
