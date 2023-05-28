@@ -1,5 +1,5 @@
 <p align="center">
-<img src="images/screenshot.jpg" alt="Microsoft Windows Logo" width="500px" />
+<img src="images/windows.jpg" alt="Microsoft Windows Logo" width="500px" />
 </p>
 
 <h1 align="center">Windows Web Developer Setup Guide (2022)</h1>
@@ -87,7 +87,7 @@ English | [中文](./README_cn.md)
 After a lot of trial and error, I've been able to piece together a pretty respectable Windows dev environment. There are plenty of guides already out there, but none of them seem to cover the entire scope. I tried to do that here, without getting too deep into any individual topic. I believe this will leave the majority of users with a smooth Windows developer experience.
 
 <p align="center">
-<img src="images/demo.gif" alt="Using wox, windows term, ohmyzsh, and vs code" />
+<img src="images/screenshot.jpg" alt="Using wox, windows term, ohmyzsh, and vs code" />
 </p>
 
 ## ☑ Prerequisites

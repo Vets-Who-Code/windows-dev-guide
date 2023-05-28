@@ -1,5 +1,5 @@
 <p align="center">
-<img src="images/screenshot.jpg" alt="Microsoft Windows Logo" width="500px" />
+<img src="images/windows.jpg" alt="Microsoft Windows Logo" width="500px" />
 </p>
 
 <h1 align="center">Windows 开发人员设置指南（2022）</h1>
