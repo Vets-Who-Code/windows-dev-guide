@@ -87,7 +87,7 @@ English | [中文](./README_cn.md)
 After a lot of trial and error, I've been able to piece together a pretty respectable Windows dev environment. There are plenty of guides already out there, but none of them seem to cover the entire scope. I tried to do that here, without getting too deep into any individual topic. I believe this will leave the majority of users with a smooth Windows developer experience.
 
 <p align="center">
-<img src="images/screenshot.jpg" alt="Using wox, windows term, ohmyzsh, and vs code" />
+<img src="images/screen.jpg" alt="Windows 11 desktop screenshot with a WSL2 Windows Terminal open" />
 </p>
 
 ## ☑ Prerequisites
