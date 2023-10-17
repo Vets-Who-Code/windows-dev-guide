@@ -80,6 +80,13 @@ English | [中文](./README_cn.md)
 - [💎 Ruby](#-ruby)
 	- [Rails](#rails)
 	- [Ruby VS Code Extensions](#ruby-vs-code-extensions)
+- [Docker](#-docker)
+	- [Docker Installation](#docker-installation)
+		- [Option 1](#option-1-1)
+		- [Option 2](#option-2-1)
+	- [Test Docker CLI](#test-docker-cli)
+	- [Docker Basics](#docker-basics)
+	- [Additional Docker Resources](#additional-docker-resources)
 - [📚 References](#-references)
 
 ## 🔭 Overview
@@ -1176,7 +1183,7 @@ This section covers setting docker desktop for windows. In the end, you will hav
 Docker provides the ability to package and run an application in a loosely isolated environment called a container.
 -[Docker Documentation](https://docs.docker.com/get-started/overview/)
 
-### Installation
+### Docker Installation
 
 -Docker uses virtualization to run container so there are two option to run docker either via wsl (recommended) or Hyper-V. If you have wsl enabled docker currently by deafault runs on wsl.
 
@@ -1297,15 +1304,14 @@ docker stop [container-id]
 
 #### Additional Docker Resources
 
--Explore [docker-hub](https://hub.docker.com/search?q=) library of all the public docker iamges.
-
--[What is a Container?](https://docs.docker.com/get-started/#what-is-a-container)
--[What is an Image?](https://docs.docker.com/get-started/#what-is-an-image)
--[Dockerfile](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/)
--[Containerizing an application](https://docs.docker.com/get-started/02_our_app/)
--[Docker-compose](https://docs.docker.com/compose/)
--[Multi Container Application](https://docs.docker.com/get-started/07_multi_container/)
--[Image Building](https://docs.docker.com/get-started/09_image_best/)
+- Explore [docker-hub](https://hub.docker.com/search?q=) library of all the public docker iamges.
+- [What is a Container?](https://docs.docker.com/get-started/#what-is-a-container)
+- [What is an Image?](https://docs.docker.com/get-started/#what-is-an-image)
+- [Dockerfile](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/)
+- [Containerizing an application](https://docs.docker.com/get-started/02_our_app/)
+- [Docker-compose](https://docs.docker.com/compose/)
+- [Multi Container Application](https://docs.docker.com/get-started/07_multi_container/)
+- [Image Building](https://docs.docker.com/get-started/09_image_best/)
 
 
 ## 📚 References
