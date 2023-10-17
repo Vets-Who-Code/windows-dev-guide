@@ -80,6 +80,13 @@ English | [中文](./README_cn.md)
 - [💎 Ruby](#-ruby)
 	- [Rails](#rails)
 	- [Ruby VS Code Extensions](#ruby-vs-code-extensions)
+- [Docker](#-docker)
+	- [Docker Installation](#docker-installation)
+		- [Option 1](#option-1-1)
+		- [Option 2](#option-2-1)
+	- [Test Docker CLI](#test-docker-cli)
+	- [Docker Basics](#docker-basics)
+	- [Additional Docker Resources](#additional-docker-resources)
 - [📚 References](#-references)
 
 ## 🔭 Overview
@@ -1167,6 +1174,145 @@ Rails 7.0.4
 - [Rails](https://marketplace.visualstudio.com/items?itemName=bung87.rails) - Ruby on Rails support for Visual Studio Code.
 - [Ruby Solargraph](https://marketplace.visualstudio.com/items?itemName=castwide.solargraph) - A Ruby gem that provides intellisense features through Microsoft's language server protocol.
 - [Ruby LSP](https://marketplace.visualstudio.com/items?itemName=Shopify.ruby-lsp) - Companion VS Code extension for the Ruby LSP gem.
+
+
+## Docker
+
+This section covers setting docker desktop for windows. In the end, you will have a docker-daemon, docker-cli, docker-compose, and more.
+
+Docker provides the ability to package and run an application in a loosely isolated environment called a container.
+-[Docker Documentation](https://docs.docker.com/get-started/overview/)
+
+### Docker Installation
+
+-Docker uses virtualization to run container so there are two option to run docker either via wsl (recommended) or Hyper-V. If you have wsl enabled docker currently by deafault runs on wsl.
+
+-What should you use? [Difference Between Hyper-V and Wsl](https://superuser.com/questions/1561465/docker-on-hyper-v-vs-wsl-2)
+
+-If you don't have wsl2 you need to enable Hyper-V [Guide](https://techcommunity.microsoft.com/t5/educator-developer-blog/step-by-step-enabling-hyper-v-for-use-on-windows-11/ba-p/3745905)
+
+Again there are two ways you can install docker-desktop on your windows machine:
+
+#### Option 1
+
+Using [Chocolatey](https://community.chocolatey.org/) CLI package manager which we installed earlier.
+
+For installation we will need shell with adminitrative priviledges, we covered how to run powershell as administrater while installing choco.
+Using any of the option open up a powershell.
+
+```sh
+choco install docker-desktop
+```
+<p align="center">
+<img src="./images/dockerICmd.png" alt="docker installation via choco" />
+</p>
+
+#### Option 2
+
+Direct install via executable available on [docker.com](https://www.docker.com/products/docker-desktop/)
+
+Step 1 - Download the executable for docker-desktop.
+
+<p align="center">
+<img src="./images/dockerDownload.png" alt="docker.com docker desktop download page" />
+</p>
+
+<p align="center">
+<img src="./images/dockerInstallExe.png" alt="docker desktop installation screenshot" />
+</p>
+
+Step 2 - Install the executable, choose appropriate virtualization environment while installation if the option shows up.
+
+Step 3 - Done with installation. Sign in with the docker account or skip for time being.
+
+<p align="center">
+<img src="./images/dockerDesktopGui.png" alt="docker desktop gui screenshot" />
+</p>
+
+#### Test Docker CLI
+
+Make sure you atleast launch docker-desktop once, let it run in the background.
+
+
+
+```sh
+docker -v
+```
+<p align="center">
+<img src="./images/dockerCliTest.png" alt="docker version command" />
+</p>
+
+```sh
+docker
+```
+
+```sh
+docker info
+```
+
+<p align="center">
+<img src="./images/dockerCliTest2.png" alt="docker info in cli" />
+</p>
+
+
+You have successfully installed docker-desktop and all other necessary tools docker-cli, docker-compose and more.
+
+### Docker Basics
+
+#### Docker CLI
+Lets test some of docker functionalities using CLI,
+
+List all the running containers
+```sh
+docker ps
+```
+
+List all the available images locally
+```sh
+docker images ls -a
+```
+
+Run a container
+- p tag for specifying the port
+- d tag for detaching the shell
+```sh
+docker run -p 8080:80 httpd
+```
+<p align="center">
+<img src="./images/dockerRunHttpd.png" alt="docker cli run command">
+</p>
+
+the above command will fetch a public image of httpd that is Apache HTTP server and run as a docker container exposing port 80 and making it available to port 8080 of our local machine. you could visit [localhost](http://localhost:8080) and view the content served by this container.
+
+<p align="center">
+<img src="./images/apachLocalhost.png" alt="content served on localhost port 8080" />
+</p>
+
+Now if you run first command it will list out this container.
+
+<p align="center">
+<img src="./images/dockerContainerList.png" alt="docker cli list command" />
+</p>
+
+Stop the running docker container
+```sh
+docker stop [container-id]
+```
+<p align="center">
+<img src="./images/dockerContainerStop.png" alt="docker cli stop command" />
+</p>
+
+#### Additional Docker Resources
+
+- Explore [docker-hub](https://hub.docker.com/search?q=) library of all the public docker iamges.
+- [What is a Container?](https://docs.docker.com/get-started/#what-is-a-container)
+- [What is an Image?](https://docs.docker.com/get-started/#what-is-an-image)
+- [Dockerfile](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/)
+- [Containerizing an application](https://docs.docker.com/get-started/02_our_app/)
+- [Docker-compose](https://docs.docker.com/compose/)
+- [Multi Container Application](https://docs.docker.com/get-started/07_multi_container/)
+- [Image Building](https://docs.docker.com/get-started/09_image_best/)
+
 
 ## 📚 References
 
