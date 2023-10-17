@@ -80,7 +80,7 @@ English | [中文](./README_cn.md)
 - [💎 Ruby](#-ruby)
 	- [Rails](#rails)
 	- [Ruby VS Code Extensions](#ruby-vs-code-extensions)
-- [Docker](#-docker)
+- [Docker](#docker)
 	- [Docker Installation](#docker-installation)
 		- [Option 1](#option-1-1)
 		- [Option 2](#option-2-1)
@@ -91,7 +91,7 @@ English | [中文](./README_cn.md)
 
 ## 🔭 Overview
 
-After a lot of trial and error, I've been able to piece together a pretty respectable Windows dev environment. There are plenty of guides already out there, but none of them seem to cover the entire scope. I tried to do that here, without getting too deep into any individual topic. I believe this will leave the majority of users with a smooth Windows developer experience.
+After a lot of trial and error, I've been able to piece together a pretty respectable Windows dev environment. While there are numerous guides available, I noticed a lack of comprehensive coverage. In this guide, I've aimed to provide a holistic overview without delving too deeply into specific topics, in the hopes of ensuring a seamless developer experience for the majority of users.
 
 <p align="center">
 <img src="images/screen.jpg" alt="Windows 11 desktop screenshot with a WSL2 Windows Terminal open" />
@@ -104,7 +104,7 @@ After a lot of trial and error, I've been able to piece together a pretty respec
 
 ## 🐧 WSL
 
-The first and most important part of setting up your Windows dev environment is installing the Windows Subsystem for Linux (WSL). I recommend sticking with Ubuntu, but feel free to try out as many distributions as you like. There are no issues with having multiple distributions installed at once.
+The first and most important part of setting up your Windows dev environment is installing the Windows Subsystem for Linux (WSL). I recommend sticking with Ubuntu but feel free to try out as many distributions as you like. There are no issues with having multiple distributions installed at once.
 
 ### Installing WSL 2
 
@@ -129,7 +129,7 @@ Once the process of installing your Linux distribution with WSL is complete, ope
 
 - This User Name and Password is specific to each separate Linux distribution that you install and has no bearing on your Windows user name.
 
-- Once you create a User Name and Password, the account will be your default user for the distribution and automatically sign-in on launch.
+- Once you create a User Name and Password, the account will be your default user for the distribution and automatically sign in on launch.
 
 - This account will be considered the Linux administrator, with the ability to run sudo (Super User Do) administrative commands.
 
@@ -183,7 +183,7 @@ However, it is recommended to store your project files on the Linux file system.
 
 Another quick tip I have is to create a code directory inside of Ubuntu, and then pin it to the quick access menu found on the left side of the file explorer. This comes in handy when transferring files quickly between Windows and Linux.
 
-1. Open file explorer and click on the Ubuntu network drive we created
+1. Open File Explorer and click on the Ubuntu network drive we created
 2. Select the home dir, and then your user directory
 3. Right-click and create a new folder, name it code, or anything else you'd like
 4. Drag that new folder to the left, underneath the star icon that says `Quick access`
@@ -201,7 +201,7 @@ wsl.exe --shutdown
 wsl.exe
 ```
 
-If you go back to your Linux shell everything should be back to normal.
+If you return to your Linux shell everything should be normal.
 
 ## 👨‍💻 Windows Terminal
 
@@ -213,7 +213,7 @@ Windows 11 comes with Windows Terminal by default, but If you are using Windows 
 
 ### Terminal Settings
 
-A couple of quick things I recommend setting up are the default profile and your starting home directory. These settings make it so launching Windows Terminal will open directly into WSL inside our user's home directory.
+A few quick things I recommend setting up are the default profile and your starting home directory. These settings make it so launching Windows Terminal will open directly into WSL inside our user's home directory.
 
 #### Default Profile
 
@@ -251,7 +251,7 @@ Check out [this guide](https://www.ubuntupit.com/best-windows-terminal-themes-an
 
 ## 📝 Git Config
 
-Git should come pre-installed on most, if not all of the WSL Linux distributions. To ensure you have the latest version, use the following command in an Ubuntu or Debian based distro:
+Git should come pre-installed on most, if not all of the WSL Linux distributions. To ensure you have the latest version, use the following command in an Ubuntu or Debian-based distro:
 
 ```sh
 sudo apt install git
@@ -281,7 +281,7 @@ And finally, add your GitHub username to link it to git (case sensitive!):
 git config --global user.username "GitHub username"
 ```
 
-Make sure you are inputting `user.username` and not `user.name` otherwise you will overwrite your name and you will not be correctly synced to your GitHub account.
+Make sure you are inputting `user.username` and not `user.name` otherwise, you will overwrite your name and you will not be correctly synced to your GitHub account.
 
 You can double-check any of your settings by typing `git config --global user.name` and so on. To make any changes just type the necessary command again as in the examples above.
 
@@ -297,7 +297,7 @@ Follow [these docs](https://docs.github.com/en/authentication/keeping-your-accou
 
 ### Git Credential Manager
 
-Once you enter in your token the first time, it can be stored via [Git Credential Manager (GCM)](https://github.com/GitCredentialManager/git-credential-manager) so you won't have to authenticate yourself each time.
+Once you enter your token the first time, it can be stored via [Git Credential Manager (GCM)](https://github.com/GitCredentialManager/git-credential-manager) so you won't have to authenticate yourself each time.
 
 You can have Git installed in WSL and also in Windows at the same time. [Git for Windows](https://gitforwindows.org/) includes GCM and is the preferred way to install it.
 
@@ -324,7 +324,7 @@ If you ever receive the following error message:
 /mnt/c/Program Files/Git/mingw64/libexec/git-core/git-credential-manager-core.exe: not found
 ```
 
-Try using the this command:
+Try using this command:
 
 ```sh
 git config --global credential.helper store
@@ -392,7 +392,7 @@ plugins=(git zsh-autosuggestions)
 
 #### [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
 
-This package provides syntax highlighting for the shell zsh. It enables highlighting of commands whilst they are typed at a zsh prompt into an interactive terminal. This helps in reviewing commands before running them, particularly in catching syntax errors.
+This package provides syntax highlighting for the shell zsh. It enables the highlighting of commands whilst they are typed at a zsh prompt into an interactive terminal. This helps in reviewing commands before running them, particularly in catching syntax errors.
 
 1. Clone this repository in oh-my-zsh's plugins directory:
 
@@ -416,7 +416,7 @@ Node.js is a JavaScript runtime environment that executes JavaScript code outsid
 
 ### NVM
 
-You will likely need to switch between multiple versions of Node.js based on the needs of different projects you're working on. Node Version Manager allows you to quickly install and use different versions of Node via the command-line.
+You will likely need to switch between multiple versions of Node.js based on the needs of the different projects you're working on. Node Version Manager allows you to quickly install and use different versions of Node via the command line.
 
 #### Installing NVM
 
@@ -450,7 +450,7 @@ Install the current stable LTS release of Node.js (recommended for production ap
 nvm install --lts
 ```
 
-Install the current release of Node.js (for testing latest Node.js features and improvements, but more likely to have issues):
+Install the current release of Node.js (for testing the latest Node.js features and improvements, but more likely to have issues):
 
 ```sh
 nvm install node
@@ -668,7 +668,7 @@ _Check out the official [NPM](https://docs.npmjs.com/), [NVM](https://github.com
 
 ## 💻 Visual Studio Code
 
-There are many amazing code editors available for free, but Visual Studio Code has become the defacto standard and my personal favorite.
+There are many amazing code editors available for free, but Visual Studio Code has become the de facto standard and my personal favorite.
 
 ### Installing VS Code
 
@@ -731,14 +731,14 @@ Note:
 
 ### Admin Shell
 
-Before we start the installation process, I want to cover launching an administrative shell from windows. There are a few ways to do this:
+Before we start the installation process, I want to cover launching an administrative shell from Windows. There are a few ways to do this:
 
 #### Option 1
 
 Right-click on the Windows start menu and select Windows Terminal (Admin):
 
 <p align="center">
-<img src="images/start-menu.png" alt="Right clicked Windows start menu" />
+<img src="images/start-menu.png" alt="Right-clicked Windows start menu" />
 </p>
 
 Once your terminal loads, click the `˅` icon and open a new PowerShell tab. It should say `Administrator: Windows PowerShell` in the new tab:
@@ -805,7 +805,7 @@ If you don't see any errors, you are ready to use Chocolatey! Type `choco` or `c
 
 ### Basic Chocolatey Commands
 
-We use the `choco` command to run chocolatey. (_Remember, you must use an administrative shell for it to work._)
+We use the `choco` command to run Chocolatey. (_Remember, you must use an administrative shell for it to work._)
 
 Install a new package:
 
@@ -855,7 +855,7 @@ Here are a few of my favorite (free) apps for productivity and development on Wi
 - [Obsidian](https://obsidian.md/) - A note-taking app using markdown
 - [Microsoft PowerToys](https://docs.microsoft.com/en-us/windows/powertoys/?WT.mc_id=twitter-0000-docsmsft) - A set of utilities for power users
 
-You can download all these at once with the following command using chocolatey in an admin shell:
+You can download all these at once with the following command using Chocolatey in an admin shell:
 
 ```ps
 choco install wox runjs responsively zeal figma drawio github-desktop postman notion powertoys obsidian -y
@@ -889,7 +889,7 @@ git clone https://github.com/Vets-Who-Code/vets-who-code-app.git
 <img src="images/clone.jpg" alt="Using git clone" width="800px" />
 </p>
 
-This make take a few minutes.
+This may take a few minutes.
 
 2. Change Directory
 
@@ -1051,9 +1051,9 @@ You will find a ton of Python extensions for VS Code, but here are a few of the 
 - [Django](https://marketplace.visualstudio.com/items?itemName=batisteo.vscode-django) - Syntax highlighting and snippets for Django.
 - [Python Indent](https://marketplace.visualstudio.com/items?itemName=KevinRose.vsc-python-indent) - Correct Python indentation.
 - [Python Environment Manager](https://marketplace.visualstudio.com/items?itemName=donjayamanne.python-environment-manager) - Manage all of your Python environments & packages.
-- [autoDocstring](https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring) - Quickly generate docstrings for python functions.
+- [autoDocstring](https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring) - Quickly generate docstrings for Python functions.
 - [Black Formatter](https://marketplace.visualstudio.com/items?itemName=ms-python.black-formatter) - Code formatter for Python using Black
-- [AREPL](https://marketplace.visualstudio.com/items?itemName=almenon.arepl) - Automatically evaluates python code in real-time as you type.
+- [AREPL](https://marketplace.visualstudio.com/items?itemName=almenon.arepl) - Automatically evaluates Python code in real-time as you type.
 - [Python Test Explorer](https://marketplace.visualstudio.com/items?itemName=LittleFoxTeam.vscode-python-test-adapter) - Run your Python tests in the Sidebar of Visual Studio Code.
 
 ### PyCharm
@@ -1072,7 +1072,7 @@ _This guide continues installation with zsh as the default shell._
 sudo apt install rbenv
 ```
 
-2. Follow instructions to load rbenv in the shell:
+2. Follow the instructions to load rbenv in the shell:
 
 ```sh
 rbenv init
@@ -1113,7 +1113,7 @@ Install the most recent stable version, which in this case is v3.1.2:
 rbenv install --verbose 3.1.2
 ```
 
-This can take a _very_ long time. The `--verbose` flag will show the install progress, otherwise it will look like it's frozen.
+This can take a _very_ long time. The `--verbose` flag will show the install progress, otherwise, it will look like it's frozen.
 
 _Ruby will be installed in your `~/.rbenv` directory._
 
@@ -1123,7 +1123,7 @@ _Ruby will be installed in your `~/.rbenv` directory._
 rbenv global 3.1.2
 ```
 
-8. Close your terminal and open a new session. Check your current version of ruby:
+8. Close your terminal and open a new session. Check your current version of Ruby:
 
 ```sh
 ruby -v
@@ -1178,27 +1178,27 @@ Rails 7.0.4
 
 ## Docker
 
-This section covers setting docker desktop for windows. In the end, you will have a docker-daemon, docker-cli, docker-compose, and more.
+This section covers setting docker desktop for Windows. In the end, you will have a docker-daemon, docker-cli, docker-compose, and more.
 
 Docker provides the ability to package and run an application in a loosely isolated environment called a container.
--[Docker Documentation](https://docs.docker.com/get-started/overview/)
+- [Docker Documentation](https://docs.docker.com/get-started/overview/)
 
 ### Docker Installation
 
--Docker uses virtualization to run container so there are two option to run docker either via wsl (recommended) or Hyper-V. If you have wsl enabled docker currently by deafault runs on wsl.
+- Docker uses virtualization to run containers so there are two options to run Docker either via WSL (recommended) or Hyper-V. If you have wsl enabled docker currently by default runs on wsl.
 
--What should you use? [Difference Between Hyper-V and Wsl](https://superuser.com/questions/1561465/docker-on-hyper-v-vs-wsl-2)
+- What should you use? [Difference Between Hyper-V and Wsl](https://superuser.com/questions/1561465/docker-on-hyper-v-vs-wsl-2)
 
--If you don't have wsl2 you need to enable Hyper-V [Guide](https://techcommunity.microsoft.com/t5/educator-developer-blog/step-by-step-enabling-hyper-v-for-use-on-windows-11/ba-p/3745905)
+- If you don't have wsl2 you need to enable Hyper-V [Guide](https://techcommunity.microsoft.com/t5/educator-developer-blog/step-by-step-enabling-hyper-v-for-use-on-windows-11/ba-p/3745905)
 
-Again there are two ways you can install docker-desktop on your windows machine:
+Again there are two ways you can install docker-desktop on your Windows machine:
 
 #### Option 1
 
 Using [Chocolatey](https://community.chocolatey.org/) CLI package manager which we installed earlier.
 
-For installation we will need shell with adminitrative priviledges, we covered how to run powershell as administrater while installing choco.
-Using any of the option open up a powershell.
+For installation we will need a shell with administrative privileges, we covered how to run Powershell as an administrator while installing Chocoloatey.
+Using any of the options open up a PowerShell.
 
 ```sh
 choco install docker-desktop
@@ -1221,9 +1221,9 @@ Step 1 - Download the executable for docker-desktop.
 <img src="./images/dockerInstallExe.png" alt="docker desktop installation screenshot" />
 </p>
 
-Step 2 - Install the executable, choose appropriate virtualization environment while installation if the option shows up.
+Step 2 - Install the executable, and choose the appropriate virtualization environment while installing if the option shows up.
 
-Step 3 - Done with installation. Sign in with the docker account or skip for time being.
+Step 3 - Done with installation. Sign in with the docker account or skip for the time being.
 
 <p align="center">
 <img src="./images/dockerDesktopGui.png" alt="docker desktop gui screenshot" />
@@ -1231,9 +1231,7 @@ Step 3 - Done with installation. Sign in with the docker account or skip for tim
 
 #### Test Docker CLI
 
-Make sure you atleast launch docker-desktop once, let it run in the background.
-
-
+Make sure you at least launch docker-desktop once, and let it run in the background.
 
 ```sh
 docker -v
@@ -1254,57 +1252,63 @@ docker info
 <img src="./images/dockerCliTest2.png" alt="docker info in cli" />
 </p>
 
-
-You have successfully installed docker-desktop and all other necessary tools docker-cli, docker-compose and more.
+You have successfully installed docker-desktop and all other necessary tools docker-cli, docker-compose, and more.
 
 ### Docker Basics
 
 #### Docker CLI
-Lets test some of docker functionalities using CLI,
 
-List all the running containers
+Let's test some of the docker functionalities using the CLI.
+
+List all the running containers:
+
 ```sh
 docker ps
 ```
 
-List all the available images locally
+List all the available images locally:
+
 ```sh
 docker images ls -a
 ```
 
-Run a container
+Run a container:
 - p tag for specifying the port
 - d tag for detaching the shell
+
 ```sh
 docker run -p 8080:80 httpd
 ```
+
 <p align="center">
 <img src="./images/dockerRunHttpd.png" alt="docker cli run command">
 </p>
 
-the above command will fetch a public image of httpd that is Apache HTTP server and run as a docker container exposing port 80 and making it available to port 8080 of our local machine. you could visit [localhost](http://localhost:8080) and view the content served by this container.
+The above command will fetch a public image of httpd which is an Apache HTTP server. It then runs it as a Docker container exposing port 80, and making it available to port 8080 of our local machine. You can visit [localhost](http://localhost:8080) and view the content served by this container.
 
 <p align="center">
 <img src="./images/apachLocalhost.png" alt="content served on localhost port 8080" />
 </p>
 
-Now if you run first command it will list out this container.
+Now if you run the `ps` command again it will list out this container.
 
 <p align="center">
 <img src="./images/dockerContainerList.png" alt="docker cli list command" />
 </p>
 
-Stop the running docker container
+Stop the running docker container:
+
 ```sh
 docker stop [container-id]
 ```
+
 <p align="center">
 <img src="./images/dockerContainerStop.png" alt="docker cli stop command" />
 </p>
 
 #### Additional Docker Resources
 
-- Explore [docker-hub](https://hub.docker.com/search?q=) library of all the public docker iamges.
+- Explore [docker-hub](https://hub.docker.com/search?q=) library of all the public docker images.
 - [What is a Container?](https://docs.docker.com/get-started/#what-is-a-container)
 - [What is an Image?](https://docs.docker.com/get-started/#what-is-an-image)
 - [Dockerfile](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/)
