@@ -167,7 +167,7 @@ When you open the Windows file explorer, it displays your devices and drives. We
 <img src="images/network-folder.jpg" alt="Mapping network drive" />
 </p>
 
-4. The end result should look something like this:
+4. The result should look something like this:
 
 <p align="center">
 <img src="images/file-explorer.jpg" alt="File explorer" width="800px" />
@@ -676,7 +676,7 @@ VS Code is available on Windows, macOS, and Linux. You can download the latest W
 
 ### Changing the Default Shell
 
-The WSL2 shell can be chosen as the default VS Code terminal by pressing `Ctrl` + `Shift` + `P` and typing/choosing Terminal: Select Default Profile, then selecting zsh:
+The WSL2 shell can be chosen as the default VS Code terminal by pressing <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> and typing/choosing Terminal: Select Default Profile, then selecting zsh:
 
 <p align="center">
 <img src="images/command-palette.jpg" alt="VSCode default shell" width="800px" />
@@ -694,7 +694,7 @@ Install the [Remote - WSL](https://marketplace.visualstudio.com/items?itemName=m
 
 This extension will also allow you to launch VS Code right from your WSL terminal by using the `code` command.
 
-If I was inside the root directory of my repository, I would use `code .` to launch the entire directory inside VS Code.
+If I were inside the root directory of my repository, I would use `code .` to launch the entire directory inside VS Code.
 
 ```sh
 cd my-project
@@ -705,7 +705,7 @@ code .
 
 The number of extensions available for VS Code can be overwhelming, here are some of the ones I use the most.
 
-- [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) - Launch a local development server with live reload feature for static & dynamic pages.
+- [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) - Launch a local development server with a live reload feature for static & dynamic pages.
 - [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare-pack) - Includes everything you need to start collaboratively editing and debugging in real-time.
 - [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) - Quickly glimpse into whom, why, and when a line or code block was changed.
 - [Git History](https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory) - View git log, file history, compare branches or commits
@@ -718,7 +718,7 @@ The number of extensions available for VS Code can be overwhelming, here are som
 - [Wakatime](https://marketplace.visualstudio.com/items?itemName=WakaTime.vscode-wakatime) - Metrics, insights, and time tracking automatically generated from your programming activity.
 - [Dash](https://marketplace.visualstudio.com/items?itemName=deerawan.vscode-dash) - Dash, Zeal, and Velocity integration in Visual Studio Code
 - [Draw.io Integration](https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio) - This unofficial extension integrates Draw.io (also known as diagrams.net) into VS Code.
-- [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker) - Makes it easy to create, manage, and debug containerized applications.
+- [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker) - This makes it easy to create, manage, and debug containerized applications.
 - [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python) - IntelliSense, Linting, Debugging, Jupyter Notebooks, refactoring, unit tests, and more.
 - [VetsWhoCode Extension Pack](https://marketplace.visualstudio.com/items?itemName=VetsWhoCode.vetswhocode-extension-pack&ssr=false#review-details) - Extension Pack for new veterans learning javascript at #VetsWhoCode
 
@@ -749,7 +749,7 @@ Once your terminal loads, click the `˅` icon and open a new PowerShell tab. It 
 
 #### Option 2
 
-If you have Windows Terminal on your taskbar, `Shift` + `Right-Click` on the icon and select run as administrator, and then open a new PowerShell tab:
+If you have Windows Terminal on your taskbar, <kbd>Shift</kbd> + `Right-Click` on the icon select run as administrator, and then open a new PowerShell tab:
 
 <p align="center">
 <img src="images/right-click-admin.png" alt="Right click windows terminal icon" />
@@ -961,9 +961,9 @@ npm run dev
 
 You should be able to view the website locally at [http://localhost:3000/](http://localhost:3000/)].
 
-`CTRL` + `Left-Click` on the localhost link in your terminal to launch the app in your browser.
+<kbd>CTRL</kbd> + `Left-Click` on the localhost link in your terminal to launch the app in your browser.
 
-`CTRL` + `C` to close the dev server when you are finished.
+<kbd>CTRL</kbd> + <kbd>C</kbd> to close the dev server when you are finished.
 
 ## 🐍 Python
 
@@ -1093,7 +1093,7 @@ eval "$(rbenv init -)"
 sudo apt-get install autoconf bison patch build-essential rustc libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libgmp-dev libncurses5-dev libffi-dev libgdbm6 libgdbm-dev libdb-dev uuid-dev
 ```
 
-5. Next, install `ruby-build` as an rbenv plugin, to make sure we don't have any problems with rbenv.
+5. Next, install `ruby-build` as a rbenv plugin, to make sure we don't have any problems with rbenv.
 
 ```sh
 git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build
@@ -1137,7 +1137,7 @@ ruby 3.1.2p20 (2022-04-12 revision 4491bb740a) [x86_64-linux]
 
 ### Rails
 
-Now that Ruby is installed, you can install Rails. Ruby has its own built-in package manager, called RubyGems. This is what you'll use to install Rails.
+Now that Ruby is installed, you can install Rails. Ruby has its built-in package manager, called RubyGems. This is what you'll use to install Rails.
 
 Enter the following to install Rails v7.0.4:
 _The `--no-document` flag speeds up the installation by skipping the gem documentation files._
@@ -1172,7 +1172,7 @@ Rails 7.0.4
 - [VSCode Ruby](https://marketplace.visualstudio.com/items?itemName=wingrunr21.vscode-ruby) - Syntax highlighting, snippet, and language configuration support for Ruby.
 - [Ruby Test Explorer](https://marketplace.visualstudio.com/items?itemName=connorshea.vscode-ruby-test-adapter) - Run your Ruby tests in the Sidebar of Visual Studio Code.
 - [Rails](https://marketplace.visualstudio.com/items?itemName=bung87.rails) - Ruby on Rails support for Visual Studio Code.
-- [Ruby Solargraph](https://marketplace.visualstudio.com/items?itemName=castwide.solargraph) - A Ruby gem that provides intellisense features through Microsoft's language server protocol.
+- [Ruby Solargraph](https://marketplace.visualstudio.com/items?itemName=castwide.solargraph) - A Ruby gem that provides IntelliSense features through Microsoft's language server protocol.
 - [Ruby LSP](https://marketplace.visualstudio.com/items?itemName=Shopify.ruby-lsp) - Companion VS Code extension for the Ruby LSP gem.
 
 
@@ -1197,7 +1197,7 @@ Again there are two ways you can install docker-desktop on your Windows machine:
 
 Using [Chocolatey](https://community.chocolatey.org/) CLI package manager which we installed earlier.
 
-For installation we will need a shell with administrative privileges, we covered how to run Powershell as an administrator while installing Chocoloatey.
+For installation we will need a shell with administrative privileges, we covered how to run Powershell as an administrator while installing Chocolatey.
 Using any of the options open up a PowerShell.
 
 ```sh
