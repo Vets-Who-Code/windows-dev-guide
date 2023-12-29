@@ -749,7 +749,7 @@ Once your terminal loads, click the `˅` icon and open a new PowerShell tab. It 
 
 #### Option 2
 
-If you have Windows Terminal on your taskbar, <kbd>Shift</kbd> + `Right-Click` on the icon select run as administrator, and then open a new PowerShell tab:
+If you have Windows Terminal on your taskbar, <kbd>Shift</kbd> + <kbd>Right-Click</kbd> on the icon select run as administrator, and then open a new PowerShell tab:
 
 <p align="center">
 <img src="images/right-click-admin.png" alt="Right click windows terminal icon" />
@@ -961,7 +961,7 @@ npm run dev
 
 You should be able to view the website locally at [http://localhost:3000/](http://localhost:3000/)].
 
-<kbd>CTRL</kbd> + `Left-Click` on the localhost link in your terminal to launch the app in your browser.
+<kbd>CTRL</kbd> + <kbd>Left-click</kbd> on the localhost link in your terminal to launch the app in your browser.
 
 <kbd>CTRL</kbd> + <kbd>C</kbd> to close the dev server when you are finished.
 
