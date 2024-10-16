@@ -84,9 +84,10 @@ English | [中文](./README_cn.md)
 	- [Docker Installation](#docker-installation)
 		- [Option 1](#option-1-1)
 		- [Option 2](#option-2-1)
-	- [Test Docker CLI](#test-docker-cli)
+		- [Test Docker CLI](#test-docker-cli)
 	- [Docker Basics](#docker-basics)
-	- [Additional Docker Resources](#additional-docker-resources)
+		- [Docker CLI](#docker-cli)
+		- [Additional Docker Resources](#additional-docker-resources)
 - [📚 References](#-references)
 
 ## 🔭 Overview
