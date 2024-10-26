@@ -2,91 +2,95 @@
 <img src="images/windows.jpg" alt="Microsoft Windows Logo" width="500px" />
 </p>
 
-<h1 align="center">Windows Web Developer Setup Guide (2022)</h1>
+<h1 align="center">Windows Web Developer Setup Guide (2024)</h1>
 
 English | [中文](./README_cn.md)
 
 - [🔭 Overview](#-overview)
 - [☑ Prerequisites](#-prerequisites)
 - [🐧 WSL](#-wsl)
-	- [Installing WSL 2](#installing-wsl-2)
-	- [User Config](#user-config)
-	- [Updating Linux](#updating-linux)
-	- [Mapping Your Linux Drive](#mapping-your-linux-drive)
-		- [Pin Your Code Directory](#pin-your-code-directory)
-	- [Restarting WSL](#restarting-wsl)
+  - [Installing WSL 2](#installing-wsl-2)
+  - [User Config](#user-config)
+  - [Updating Linux](#updating-linux)
+  - [Mapping Your Linux Drive](#mapping-your-linux-drive)
+    - [Pin Your Code Directory](#pin-your-code-directory)
+  - [Restarting WSL](#restarting-wsl)
 - [👨‍💻 Windows Terminal](#-windows-terminal)
-	- [Installing Windows Terminal](#installing-windows-terminal)
-	- [Terminal Settings](#terminal-settings)
-		- [Default Profile](#default-profile)
-		- [Starting Directory](#starting-directory)
+  - [Installing Windows Terminal](#installing-windows-terminal)
+  - [Terminal Settings](#terminal-settings)
+    - [Default Profile](#default-profile)
+    - [Starting Directory](#starting-directory)
 - [📝 Git Config](#-git-config)
-	- [Name](#name)
-	- [Email](#email)
-	- [Username](#username)
-- [😺 GitHub Credentials](#-github-credentials)
-	- [Creating your Personal Access Token](#creating-your-personal-access-token)
-	- [Git Credential Manager](#git-credential-manager)
-	- [Storing Your Token](#storing-your-token)
+  - [Name](#name)
+  - [Email](#email)
+  - [Username](#username)
+- [GitHub CLI Installation](#github-cli-installation)
+- [GitHub CLI Configuration](#github-cli-configuration)
+  - [Creating your Personal Access Token](#creating-your-personal-access-token)
+  - [Git Credential Manager](#git-credential-manager)
+  - [Storing Your Token](#storing-your-token)
 - [💤 Zsh](#-zsh)
-	- [Installing Zsh](#installing-zsh)
-	- [OhMyZsh](#ohmyzsh)
-	- [cURL](#curl)
-	- [Installing OhMyZsh](#installing-ohmyzsh)
-	- [More Plugins](#more-plugins)
-		- [zsh-autosuggestions](#zsh-autosuggestions)
-		- [zsh-syntax-highlighting](#zsh-syntax-highlighting)
+  - [Installing Zsh](#installing-zsh)
+  - [OhMyZsh](#ohmyzsh)
+  - [cURL](#curl)
+  - [Installing OhMyZsh](#installing-ohmyzsh)
+  - [More Plugins](#more-plugins)
+    - [zsh-autosuggestions](#zsh-autosuggestions)
+    - [zsh-syntax-highlighting](#zsh-syntax-highlighting)
 - [📦 Node.js](#-nodejs)
-	- [NVM](#nvm)
-		- [Installing NVM](#installing-nvm)
-		- [Changing Node Versions](#changing-node-versions)
-	- [NPM](#npm)
-		- [New Projects](#new-projects)
-		- [package.json](#packagejson)
-		- [Installing Modules](#installing-modules)
-		- [Dependencies](#dependencies)
-		- [Developer Dependencies](#developer-dependencies)
-		- [Batch Installing](#batch-installing)
-		- [Uninstalling](#uninstalling)
-		- [Versioning](#versioning)
-		- [package-lock.json](#package-lockjson)
-		- [Scripts](#scripts)
+  - [NVM](#nvm)
+    - [Installing and Updating NVM](#installing-and-updating-nvm)
+    - [Changing Node Versions](#changing-node-versions)
+  - [NPM](#npm)
+    - [New Projects](#new-projects)
+    - [package.json](#packagejson)
+    - [Installing Modules](#installing-modules)
+    - [Dependencies](#dependencies)
+    - [Developer Dependencies](#developer-dependencies)
+    - [Batch Installing](#batch-installing)
+    - [Uninstalling](#uninstalling)
+    - [Versioning](#versioning)
+    - [package-lock.json](#package-lockjson)
+    - [Scripts](#scripts)
 - [💻 Visual Studio Code](#-visual-studio-code)
-	- [Installing VS Code](#installing-vs-code)
-	- [Changing the Default Shell](#changing-the-default-shell)
-	- [Remote Extension](#remote-extension)
-	- [More Extensions](#more-extensions)
+  - [Installing VS Code](#installing-vs-code)
+  - [Remote Extension](#remote-extension)
+  - [Changing the Default Shell](#changing-the-default-shell)
+  - [Install the Vets Who Code Extension Pack](#install-the-vets-who-code-extension-pack)
+  - [Install the Vets Who Code Theme for VS Code](#install-the-vets-who-code-theme-for-vs-code)
+  - [More Extensions](#more-extensions)
 - [🍫 Chocolatey](#-chocolatey)
-	- [Admin Shell](#admin-shell)
-		- [Option 1](#option-1)
-		- [Option 2](#option-2)
-		- [Option 3](#option-3)
-		- [Option 4](#option-4)
-	- [Installing Chocolatey](#installing-chocolatey)
-	- [Basic Chocolatey Commands](#basic-chocolatey-commands)
-	- [Windows Apps](#windows-apps)
+  - [Admin Shell](#admin-shell)
+    - [Option 1](#option-1)
+    - [Option 2](#option-2)
+    - [Option 3](#option-3)
+    - [Option 4](#option-4)
+  - [Installing Chocolatey](#installing-chocolatey)
+  - [Basic Chocolatey Commands](#basic-chocolatey-commands)
+  - [Windows Apps](#windows-apps)
 - [🪜 Chrome Extensions](#-chrome-extensions)
 - [🇺🇸 VetsWhoCode Web App](#-vetswhocode-web-app)
 - [🐍 Python](#-python)
-	- [pip](#pip)
-	- [venv](#venv)
-	- [Flask](#flask)
-	- [Django](#django)
-	- [JupyterLab](#jupyterlab)
-		- [Notebook](#notebook)
-		- [Voilà](#voilà)
-	- [Python VS Code Extensions](#python-vs-code-extensions)
-	- [PyCharm](#pycharm)
+  - [pip](#pip)
+  - [venv](#venv)
+  - [Flask](#flask)
+  - [Django](#django)
+  - [JupyterLab](#jupyterlab)
+    - [Notebook](#notebook)
+    - [Voilà](#voilà)
+  - [Python VS Code Extensions](#python-vs-code-extensions)
+  - [PyCharm](#pycharm)
 - [💎 Ruby](#-ruby)
-	- [Rails](#rails)
-	- [Ruby VS Code Extensions](#ruby-vs-code-extensions)
+  - [Rails](#rails)
+  - [Ruby VS Code Extensions](#ruby-vs-code-extensions)
 - [Docker](#docker)
-	- [Docker Installation](#docker-installation)
-		- [Option 1](#option-1-1)
-		- [Option 2](#option-2-1)
-	- [Test Docker CLI](#test-docker-cli)
-	- [Docker Basics](#docker-basics)
-	- [Additional Docker Resources](#additional-docker-resources)
+  - [Docker Installation](#docker-installation)
+    - [Option 1](#option-1-1)
+    - [Option 2](#option-2-1)
+    - [Test Docker CLI](#test-docker-cli)
+  - [Docker Basics](#docker-basics)
+    - [Docker CLI](#docker-cli)
+    - [Additional Docker Resources](#additional-docker-resources)
 - [📚 References](#-references)
 
 ## 🔭 Overview
@@ -237,9 +241,8 @@ A default Ubuntu terminal will open to the root directory. To make finding your 
 
 1. Under the Profiles section in the settings menu click on Ubuntu
 2. At the General tab, you will find a Starting directory input
-3. Enter the following replacing "username" with your Ubuntu user name: `\\wsl$\Ubuntu\home\username`
+3. Enter the following replacing "username" with your Ubuntu user name: `\home\username`
 4. You can leave the `Use parent process directory` box unchecked
-5. If it is still opening into your `/` directory, change the `Command line` setting located right above the `Starting directory` input box to the following: `wsl.exe -d Ubuntu`
 
 <p align="center">
 <img src="images/start-dir.jpg" alt="Starting directory in Ubuntu terminal" width="800px" />
@@ -285,7 +288,35 @@ Make sure you are inputting `user.username` and not `user.name` otherwise, you w
 
 You can double-check any of your settings by typing `git config --global user.name` and so on. To make any changes just type the necessary command again as in the examples above.
 
-## 😺 GitHub Credentials
+## GitHub CLI Installation
+
+Download binaries from the official source:
+
+```sh
+(type -p wget >/dev/null || (sudo apt update && sudo apt-get install wget -y)) \
+	&& sudo mkdir -p -m 755 /etc/apt/keyrings \
+	&& wget -qO- https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo tee /etc/apt/keyrings/githubcli-archive-keyring.gpg > /dev/null \
+	&& sudo chmod go+r /etc/apt/keyrings/githubcli-archive-keyring.gpg \
+	&& echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null \
+	&& sudo apt update \
+	&& sudo apt install gh -y
+```
+
+Once the CLI is installed, run this command to update:
+
+```sh
+sudo apt update && sudo apt install gh
+```
+
+## GitHub CLI Configuration
+
+Enter this command in the terminal:
+
+```sh
+gh auth login
+```
+
+Follow the prompts to authenticate your GitHub account. 
 
 ### Creating your Personal Access Token
 
@@ -299,7 +330,7 @@ Follow [these docs](https://docs.github.com/en/authentication/keeping-your-accou
 
 Once you enter your token the first time, it can be stored via [Git Credential Manager (GCM)](https://github.com/GitCredentialManager/git-credential-manager) so you won't have to authenticate yourself each time.
 
-You can have Git installed in WSL and also in Windows at the same time. [Git for Windows](https://gitforwindows.org/) includes GCM and is the preferred way to install it.
+You can have Git installed in WSL and also in Windows at the same time. [Git for Windows](https://gitforwindows.org/) includes GCM.
 
 <p align="center">
 <img src="images/gcm.png" alt="Windows Git Installer Menu" />
@@ -418,19 +449,25 @@ Node.js is a JavaScript runtime environment that executes JavaScript code outsid
 
 You will likely need to switch between multiple versions of Node.js based on the needs of the different projects you're working on. Node Version Manager allows you to quickly install and use different versions of Node via the command line.
 
-#### Installing NVM
+#### Installing and Updating NVM
 
 1. Open your terminal and install NVM with `curl` or `wget`:
 
 ```sh
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
 ```
 
 ```sh
-wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
 ```
 
-To verify installation, enter: `command -v nvm`. This should return 'nvm', if you receive 'command not found' or no response at all, close your current terminal, reopen it, and try again.
+To verify installation, enter:
+
+```sh
+command -v nvm
+```
+
+This should return 'nvm', if you receive 'command not found' or no response at all, close your current terminal, reopen it, and try again.
 
 2. List which versions of Node are currently installed (should be none at this point):
 
@@ -438,11 +475,9 @@ To verify installation, enter: `command -v nvm`. This should return 'nvm', if yo
 nvm ls
 ```
 
-<p align="center">
-<img src="images/no-node.png" alt="Ubuntu terminal displaying node not installed" width="800px" />
-</p>
+This will show Node is not currently installed, and lists all versions available for install.
 
-3. Install both the current and stable LTS versions of Node.js.
+1. Install both the current and stable LTS versions of Node.js.
 
 Install the current stable LTS release of Node.js (recommended for production applications):
 
@@ -471,7 +506,7 @@ Now you should see the two versions that you just installed listed.
 5. Verify that Node.js is installed and the current version:
 
 ```sh
-node --version
+node -v
 ```
 
 Then verify that you have NPM installed as well:
@@ -484,12 +519,6 @@ npm --version
 
 Use the following commands to change the version of Node you would like to use for any given project:
 
-_Switch to the Current version:_
-
-```sh
-nvm use node
-```
-
 _Switch to the LTS version:_
 
 ```sh
@@ -499,7 +528,7 @@ nvm use --lts
 You can also use the specific number for any additional versions you've installed:
 
 ```sh
-nvm use v8.2.1
+nvm use v23.1.0
 ```
 
 To list all of the versions of Node.js available, use the command: `nvm ls-remote`.
@@ -507,6 +536,12 @@ To list all of the versions of Node.js available, use the command: `nvm ls-remot
 ### NPM
 
 Node Package Manager is the default package manager for Node.js. It is a command-line tool used to download or publish packages and manage the dependencies of a project. There is a searchable repository of all available NPM packages at [https://www.npmjs.com/](https://www.npmjs.com/).
+
+To list your current installed version of NPM:
+
+```sh
+npm -v
+```
 
 #### New Projects
 
@@ -668,11 +703,28 @@ _Check out the official [NPM](https://docs.npmjs.com/), [NVM](https://github.com
 
 ## 💻 Visual Studio Code
 
-There are many amazing code editors available for free, but Visual Studio Code has become the de facto standard and my personal favorite.
+There are many amazing code editors available for free, but Visual Studio Code our favorite and recommended by VetsWhoCode.
 
 ### Installing VS Code
 
-VS Code is available on Windows, macOS, and Linux. You can download the latest Windows installer [here](https://code.visualstudio.com/). I recommend using the stable build.
+VS Code is available on Windows, macOS, and Linux. You can download the latest Windows installer [here](https://code.visualstudio.com/download).
+
+During installation, be sure to select the **Add to PATH** option, allowing you to open a folder in WSL from the Windows terminal.
+
+### Remote Extension
+
+Install the [Remote Development Extension Pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack).
+
+>This allows you to use WSL as your integrated development environment and will handle compatibility and pathing for you. [Learn more](https://code.visualstudio.com/docs/remote/remote-overview).
+
+This extension will also allow you to launch VS Code right from your WSL terminal by using the `code` command.
+
+If I were inside the root directory of my repository, I would use `code .` to launch the entire directory inside VS Code.
+
+```sh
+cd my-project
+code .
+```
 
 ### Changing the Default Shell
 
@@ -686,41 +738,35 @@ The WSL2 shell can be chosen as the default VS Code terminal by pressing <kbd>Ct
 <img src="images/zsh-profile.jpg" alt="VSCode default shell" width="800px" />
 </p>
 
-### Remote Extension
+### Install the Vets Who Code Extension Pack
 
-Install the [Remote - WSL](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl) extension on VS Code.
+[VetsWhoCode Extension Pack](https://marketplace.visualstudio.com/items?itemName=VetsWhoCode.vetswhocode-extension-pack) - Extension Pack for new veterans learning javascript at #VetsWhoCode
 
->This allows you to use WSL as your integrated development environment and will handle compatibility and pathing for you. [Learn more](https://code.visualstudio.com/docs/remote/remote-overview).
+### Install the Vets Who Code Theme for VS Code
 
-This extension will also allow you to launch VS Code right from your WSL terminal by using the `code` command.
-
-If I were inside the root directory of my repository, I would use `code .` to launch the entire directory inside VS Code.
-
-```sh
-cd my-project
-code .
-```
+[HashFlag Theme](https://marketplace.visualstudio.com/items?itemName=OfficialVetsWhoCode.HashFlag) - A High contrast programming theme inspired by the colors of Vets Who Code.
 
 ### More Extensions
 
-The number of extensions available for VS Code can be overwhelming, here are some of the ones I use the most.
+The number of extensions available for VS Code can be overwhelming, here are some useful extenstions:
 
+- [Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag) - Automatically add HTML/XML close tag.
+- [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag) - Automatically rename paired HTML/XML tag.
+- [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight) - This extension styles CSS/web colors found in your document.
+- [Dash](https://marketplace.visualstudio.com/items?itemName=deerawan.vscode-dash) - Dash, Zeal, and Velocity integration in Visual Studio Code
+- [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker) - This makes it easy to create, manage, and debug containerized applications.
+- [Draw.io Integration](https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio) - This unofficial extension integrates Draw.io (also known as diagrams.net) into VS Code.
+- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) - Find and fix problems in your JavaScript code
+- [Git History](https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory) - View git log, file history, compare branches or commits
+- [GitHub Markdown Preview](https://marketplace.visualstudio.com/items?itemName=bierner.github-markdown-preview) - Adds styling, markdown checkboxes, footnotes, emoji, and YAML preamble.
+- [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) - Quickly glimpse into whom, why, and when a line or code block was changed.
 - [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) - Launch a local development server with a live reload feature for static & dynamic pages.
 - [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare-pack) - Includes everything you need to start collaboratively editing and debugging in real-time.
-- [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) - Quickly glimpse into whom, why, and when a line or code block was changed.
-- [Git History](https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory) - View git log, file history, compare branches or commits
-- [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) - Prettier is an opinionated code formatter.
-- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) - Find and fix problems in your JavaScript code
-- [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight) - This extension styles CSS/web colors found in your document.
 - [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one) - Markdown keyboard shortcuts, table of contents, auto preview, and more
 - [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) - Markdown linting and style checking for Visual Studio Code
-- [GitHub Markdown Preview](https://marketplace.visualstudio.com/items?itemName=bierner.github-markdown-preview) - Adds styling, markdown checkboxes, footnotes, emoji, and YAML preamble.
+- [Postman](https://marketplace.visualstudio.com/items?itemName=Postman.postman-for-vscode) - Streamline API development and testing with the power of Postman, directly in your favorite IDE.
+- [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) - Prettier is an opinionated code formatter.
 - [Wakatime](https://marketplace.visualstudio.com/items?itemName=WakaTime.vscode-wakatime) - Metrics, insights, and time tracking automatically generated from your programming activity.
-- [Dash](https://marketplace.visualstudio.com/items?itemName=deerawan.vscode-dash) - Dash, Zeal, and Velocity integration in Visual Studio Code
-- [Draw.io Integration](https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio) - This unofficial extension integrates Draw.io (also known as diagrams.net) into VS Code.
-- [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker) - This makes it easy to create, manage, and debug containerized applications.
-- [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python) - IntelliSense, Linting, Debugging, Jupyter Notebooks, refactoring, unit tests, and more.
-- [VetsWhoCode Extension Pack](https://marketplace.visualstudio.com/items?itemName=VetsWhoCode.vetswhocode-extension-pack&ssr=false#review-details) - Extension Pack for new veterans learning javascript at #VetsWhoCode
 
 Note:
 >You will need to install any VS Code extensions for your Remote - WSL. Extensions already installed locally on VS Code will not automatically be available. [Learn more](https://code.visualstudio.com/docs/remote/wsl#_managing-extensions).
@@ -865,13 +911,14 @@ choco install wox runjs responsively zeal figma drawio github-desktop postman no
 
 These are all available as [Firefox extensions](https://addons.mozilla.org/en-US/firefox/extensions/) as well.
 
-- [React Dev tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi) - Adds React debugging tools to the Chrome Developer Tools.
-- [ColorZilla](https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp) - Advanced Eyedropper, Color Picker, Gradient Generator, and other colorful goodies
 - [Axe Accessibility](https://chrome.google.com/webstore/detail/axe-devtools-web-accessib/lhdoppojpmngadmnindnejefpokejbdd) - Accessibility Checker for Developers, Testers, and Designers in Chrome
+- [ColorZilla](https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp) - Advanced Eyedropper, Color Picker, Gradient Generator, and other colorful goodies
 - [daily.dev](https://chrome.google.com/webstore/detail/dailydev-the-homepage-dev/jlmpjdjjbgclbocgajdjefcidcncaied) - Get a feed of the hottest developer news personalized to you.
-- [Nimbus Capture](https://chrome.google.com/webstore/detail/nimbus-screenshot-screen/bpconcjcammlapcogcnnelfmaeghhagj) - Screen Capture full Web page or any part.
-- [WhatFont](https://chrome.google.com/webstore/detail/whatfont/jabopobgcpjmedljpbcaablpmlmfcogm) - With this extension, you could inspect web fonts by just hovering on them.
 - [JSON Formatter](https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa?hl=en) - Makes JSON easy to read.
+- [Nimbus Capture](https://chrome.google.com/webstore/detail/nimbus-screenshot-screen/bpconcjcammlapcogcnnelfmaeghhagj) - Screen Capture full Web page or any part.
+- [React Dev tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi) - Adds React debugging tools to the Chrome Developer Tools.
+- [Site Pallette](https://chromewebstore.google.com/detail/site-palette/pekhihjiehdafocefoimckjpbkegknoh?hl=en-US&utm_source=ext_sidebar) - Generate a color palette from any website.
+- [WhatFont](https://chrome.google.com/webstore/detail/whatfont/jabopobgcpjmedljpbcaablpmlmfcogm) - With this extension, you could inspect web fonts by just hovering on them.
 
 ## 🇺🇸 VetsWhoCode Web App
 
@@ -879,10 +926,10 @@ Let's get the VWC App installed and running locally. It will be our first step t
 
 1. Clone the Repo
 
-Download the repository from GitHub using `git clone`:
+Clone the repository from GitHub:
 
 ```sh
-git clone https://github.com/Vets-Who-Code/vets-who-code-app.git
+gh repo clone Vets-Who-Code/vets-who-code-app
 ```
 
 <p align="center">
@@ -933,21 +980,8 @@ There will be **a lot** of warnings and other messages that display, but this is
 <img src="images/npm2.jpg" alt="Installing dependencies with npm continued" width="800px" />
 </p>
 
-5. Environment Variables
 
-Environment variables hold secret API keys and are needed to run the blog by connecting to the Contentful API.
-
-We can create a default .env file that will use mock data for the blog when running it locally. Use the following command from the root of the vets-who-code-app directory:
-
-```sh
-cp .env.example .env
-```
-
-<p align="center">
-<img src="images/env.jpg" alt="Creating the .env file" width="800px" />
-</p>
-
-6. Run the App
+5. Run the App
 
 Finally, we can launch the app on our local server:
 
@@ -1110,7 +1144,7 @@ rbenv install -l
 Install the most recent stable version, which in this case is v3.1.2:
 
 ```sh
-rbenv install --verbose 3.1.2
+rbenv install --verbose 3.3.5
 ```
 
 This can take a _very_ long time. The `--verbose` flag will show the install progress, otherwise, it will look like it's frozen.
@@ -1120,7 +1154,7 @@ _Ruby will be installed in your `~/.rbenv` directory._
 7. Set the global version, so that when you open a new terminal, it will use this version of Ruby.
 
 ```sh
-rbenv global 3.1.2
+rbenv global 3.3.5
 ```
 
 8. Close your terminal and open a new session. Check your current version of Ruby:
@@ -1132,18 +1166,18 @@ ruby -v
 You should see something like this:
 
 ```sh
-ruby 3.1.2p20 (2022-04-12 revision 4491bb740a) [x86_64-linux]
+ruby 3.3.5 (2024-09-03 revision ef084cc8f4) [x86_64-linux]
 ```
 
 ### Rails
 
 Now that Ruby is installed, you can install Rails. Ruby has its built-in package manager, called RubyGems. This is what you'll use to install Rails.
 
-Enter the following to install Rails v7.0.4:
+Enter the following to install Rails v7.2.1.2:
 _The `--no-document` flag speeds up the installation by skipping the gem documentation files._
 
 ```sh
-gem install rails -v 7.0.4 --no-document
+gem install rails -v 7.2.1.2 --no-document
 ```
 
 1. Next you'll need to install a shim to associate the `rails` command with `rbenv`:
